@@ -91,8 +91,6 @@ html {
 
 }
 
-
-
 .imagewrapper{
     text-align:center;
     height:100%;
@@ -187,9 +185,6 @@ footer{
   width: 30em;
 }
 
-.other-logos{
-    display: none;
-}
 
 
 img {
@@ -208,8 +203,14 @@ img {
 
 /* Picture navigation layout */
 
-.other-logos img {
-    margin-left: 5%;
+.other-logos {
+    display: none;
+    img {
+        margin-left: 5%;
+    }
+    p {
+        text-align: center;
+    }
 }
 
 #current-logo{
@@ -237,12 +238,12 @@ img {
 }
 
 .container {
-   margin-top: 80px;
-  background-color: rgba(255,255,255,0.3); 
-   position: relative;
+    margin-top: 80px;
+    background-color: rgba(255,255,255,0.3); 
+    position: relative;
 }
 
-/* Top menu */
+/* Top menu - white bar on top*/
 
 #header{
     position: fixed;
@@ -252,36 +253,49 @@ img {
     z-index: 10;
     top:0;
     background-color: rgba(255, 255, 255, 0.8);
+    
+    /* navigation between sections of the site */
+    #nav {
+        position: fixed;
+        top:0px;
+        right: 10%;
+        margin: 0 0 0 0;
+        font-size: 22px;
+        margin-top:1%;
+        z-index: 11;
+        ul li {
+            display: inline;
+            margin: 0 20px 0 0;
+            margin-bottom: 130px;
+            z-index: 12;
+        }
+        a {
+            text-decoration: none;
+            color:#000000;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        /* sub-menu for short-movies seasons */
+        #under-nav{
+            width: 80px;
+            font-size: 17px;
+            display: none;
+            background-color: rgba(255, 255, 255, 0.8);
+            li {
+                display:block;
+                margin : 0;
+            }
+        }
+    }
 }
 
-#nav {
-    position: fixed;
-    top:0px;
-    right: 10%;
-    margin: 0 0 0 0;
-    font-size: 22px;
-    margin-top:1%;
-    z-index: 11;
-    ul li {
-        display: inline;
-        margin: 0 20px 0 0;
-        margin-bottom: 130px;
-        z-index: 12;
-    }
-    a {
-        text-decoration: none;
-        color:#000000;
-    }
-}
+
+
+
 
 #films ,#festivals, #contacts{
     text-decoration: none;
 }
   
-#nav a:hover {
-    text-decoration: underline;
-}
 
-.other-logos p{
-text-align: center;
-}
