@@ -63,21 +63,6 @@
         $('#current-picture').attr('src', newSrc);
     }
 
-    var woldMapping = {
-        170: 'france',
-        171: 'rwanda',
-        172: 'algerie',
-        173: 'france',
-        174: 'reunion',
-        175: 'algerie',
-        176: 'rwanda'
-    };
-    var countryWebSite = {
-        'rwanda': 'http://rwandafilmfestival.net/',
-        'algerie': 'https://www.facebook.com/pages/Association-Project-heurts/254178147934570',
-        'reunion': 'http://www.festivalfilmafriqueiles.fr/'
-    };
-
   new Raphael('MapPortView', 480, 550, function () {
     var r = this;
     r.setViewBox(410, 85, 200, 240, false);
@@ -105,11 +90,11 @@
         $('#current-logo').attr('style', 'display: block');
         $('#current-picture').attr('style', 'display: block');
         $('#current-logo').attr('src', 'images/logos/' + woldMapping[this.id] + '.jpg');
-        $('.other-logos p').text(woldMapping[this.id]);
-        $('#currentLogoLink').attr('href', countryWebSite[woldMapping[this.id]]);
+        $('.other-logos p').text(countryInfo[woldMapping[this.id]].displayCountry + ' - ' + countryInfo[woldMapping[this.id]].displayFestival);
+        $('#currentLogoLink').attr('href', countryInfo[woldMapping[this.id]].website);
         $('#current-picture').attr('src', 'images/photos-festival/' + woldMapping[this.id] + pictureIndex + '.jpg');
     };
-    
+
     r.setStart();
     for (var country in worldmap.shapes) {
       // var c = Raphael.hsb(Math.random(), .5, .75);
@@ -175,14 +160,12 @@
     var dot2 = getDot();
     var dot3 = getDot();
     var dot4 = getDot();
-    var parisLatLon = '48\xb051\u203224\u2033N, 2\xb021\u203207\u2033E';
-    var reunionLatLon = '20\xb052\u203200\u2033S, 55\xb028\u203200\u2033E';
-    var bejaiaLatLon = '36\xb045\u203200\u2033N, 5\xb04\u203200\u2033E';
-    var kigaliLatLon = '1\xb057\u203213\u2033S, 30\xb03\u203238\u2033E';
-    dot.stop().attr(world.parseLatLon(parisLatLon)).animate({ r: 2 }, 2000, 'elastic');
-    dot2.stop().attr(world.parseLatLon(reunionLatLon)).animate({ r: 2 }, 2000, 'elastic');
-    dot3.stop().attr(world.parseLatLon(bejaiaLatLon)).animate({ r: 2 }, 2000, 'elastic');
-    dot4.stop().attr(world.parseLatLon(kigaliLatLon)).animate({ r: 2 }, 2000, 'elastic');
+
+
+    dot.stop().attr(world.parseLatLon(countryInfo.france.festivalLatLon)).animate({ r: 2 }, 2000, 'elastic');
+    dot2.stop().attr(world.parseLatLon(countryInfo.reunion.festivalLatLon)).animate({ r: 2 }, 2000, 'elastic');
+    dot3.stop().attr(world.parseLatLon(countryInfo.algerie.festivalLatLon)).animate({ r: 2 }, 2000, 'elastic');
+    dot4.stop().attr(world.parseLatLon(countryInfo.rwanda.festivalLatLon)).animate({ r: 2 }, 2000, 'elastic');
     world.hover(over, out);
   });
 }());
