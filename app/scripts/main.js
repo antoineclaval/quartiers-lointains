@@ -1,6 +1,14 @@
 (function () {
 
+    /* Jshint configuration */
+
     'use strict';
+    /* global countryInfo */
+    /* global worldMapping */
+    /* global worldmap */
+    /* global Raphael */
+
+    /* End JsHint Conf */
 
     // This is a functions that scrolls to #{id}link
     function goToByScroll(id) {
@@ -49,6 +57,7 @@
     var currentCountry = "algerie";
 
     function navclick() {
+        /*jshint validthis:true */
         var str =this.id;
         if (str.indexOf('right') > 0) {
             pictureIndex++;
@@ -87,7 +96,7 @@
         };
 
         function resolveWorldMapping(idCountry){
-            return woldMapping[idCountry];
+            return worldMapping[idCountry];
         }
 
         var clicked = function () {
@@ -104,8 +113,8 @@
             $('.other-logos').show();
             $('#current-logo').attr('style', 'display: block');
             $('#current-picture').attr('style', 'display: block');
-            $('#current-logo').attr('src', 'images/logos/' + woldMapping[this.id] + '.jpg');
-            $('.other-logos p').text(countryInfo[currentCountry].displayCountry + ' - ' + countryInfo[woldMapping[this.id]].displayFestival);
+            $('#current-logo').attr('src', 'images/logos/' + currentCountry + '.jpg');
+            $('.other-logos p').text(countryInfo[currentCountry].displayCountry + ' - ' + countryInfo[currentCountry].displayFestival);
             $('#currentLogoLink').attr('href', countryInfo[currentCountry].website);
             $('#current-picture').attr('src', 'images/photos-festival/' + currentCountry + pictureIndex + '.jpg');
         };
