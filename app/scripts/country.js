@@ -12,7 +12,7 @@ var woldMapping = {
 var countryInfo = {
 	'rwanda' : {
 		'website' : 'http://rwandafilmfestival.net',
-		'pictureNumber' : 5,
+		'pictureNumber' : 3,
 		'displayCountry' : 'Rwanda', 
 		'displayFestival': 'Rwanda film festival',
 		'festivalLatLon' : '1\xb057\u203213\u2033S, 30\xb03\u203238\u2033E'
@@ -26,7 +26,7 @@ var countryInfo = {
 	},
 	'reunion' : {
 		'website' : 'http://www.festivalfilmafriqueiles.fr/',
-		'pictureNumber' : 3,
+		'pictureNumber' : 5,
 		'displayCountry' : 'La Réunion', 
 		'displayFestival': 'Festival international du film d\'Afrique et des îles',
 		'festivalLatLon' : '20\xb052\u203200\u2033S, 55\xb028\u203200\u2033E'
