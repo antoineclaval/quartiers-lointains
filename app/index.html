@@ -2,14 +2,13 @@
 <html class="no-js">
     <head>
         <meta charset="utf-8">
-        <title>Quartiers Lointains : Courts Métrage du Nord au Sud de l'hemisphère</title>
+        <title>Quartiers Lointains : Courts Métrage du Nord au Sud de l'hemisphère.</title>
         <meta name="description" content="Quartiers Lointain propose des courts métrages du Nord au Sud de l'hemisphère.">
         <meta name="viewport" content="width=device-width">
         <link rel="shortcut icon" href="/favicon.ico">
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
         <!-- build:css styles/vendor.css -->
         <!-- bower:css -->
-
         <!-- endbower -->
         <!-- endbuild -->
         <!-- build:css(.tmp) styles/main.css -->
@@ -20,7 +19,7 @@
         <!-- endbuild -->
 
     </head>
-    <body>
+    <body>·
         <!--[if lt IE 10]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
@@ -29,7 +28,7 @@
         <a id="balink" href="#ba"><img id="logo" src="images/logo_ql.png"></a>
         <div id="nav">
             <ul> 
-                <li><a id="filmslink" href="#films">FILMS</a></li>
+                <li id="submenu"f><a id="s1link" href="#films">FILMS</a></li>
                 <li><a id="festivalslink" href="#festivals">FESTIVALS</a></li>
                 <li><a id="contactslink" href="#contacts">CONTACTS</a></li>
             </ul>
@@ -59,8 +58,8 @@
             </div>
         </div>
 
-        <div> <!-- sixteen collumns -->
-            <a id="films"><h1>SAISON 1</h1></a>
+        <div> 
+            <a id="s1"><h1>SAISON 1</h1></a>
         </div>
         
         <blockquote>
@@ -286,7 +285,15 @@ Actuellement, Djinn Carrénard finalise son deuxième long-métrage de fiction :
             </div>
         </div>
 
-        <div class="row" > <!-- sixteen collumns -->
+
+       <div class="row"> 
+            <a id="s2"><h1>SAISON 2</h1></a>
+             <blockquote>
+                <p>La saison 2 est encore en cours d'élaboration. </p>
+            </blockquote>
+        </div>
+
+        <div class="row" > 
             <a id="festivals"><h1>FESTIVALS </h1></a>
                 <blockquote>
         Élaboré en partenariat avec les festivals français <a href="http://generationcourt.com/">Génération Court</a>, <a href="http://www.cinebanlieue.org/"> Cinébanlieue</a> et <a href="http://www.lespepitesducinema.com/">Les Pépites du Cinéma</a>, le programme « Quartiers Lointains » a été présenté en 2013 au <a href="http://rwandafilmfestival.net/">Rwanda Film Festival de Kigali</a> (juillet 2013); à la <a href="https://www.facebook.com/pages/Association-Project-heurts/254178147934570">10e Nuit du Court-Métrage de Béjaïa</a> (Algérie, août 2013) ainsi qu'au <a href="http://www.festivalfilmafriqueiles.fr/">Festival international du Film d'Afrique et des îles </a>(La Réunion, septembre 2013). 
@@ -314,9 +321,9 @@ Actuellement, Djinn Carrénard finalise son deuxième long-métrage de fiction :
                 <p></p>
 
                 <div id="picture-nav">
-                    <img  id="current-picture" class="picture-movies" onerror="handleImgError()" src="images/photos-festival/algerie1.jpg">
-                    <img id="nav-right" onclick="navclick(this)" class="nav-button" src="images/nav_right.png">
-                    <img id="nav-left" onclick="navclick(this)" class="nav-button" src="images/nav_left.png">
+                    <img  id="current-picture" class="picture-movies" src="images/photos-festival/algerie1.jpg">
+                    <img id="nav-right" class="nav-button" src="images/nav_right.png">
+                    <img id="nav-left" class="nav-button" src="images/nav_left.png">
                 </div>
 
             </div>
@@ -363,6 +370,7 @@ Actuellement, Djinn Carrénard finalise son deuxième long-métrage de fiction :
         <!-- build:js scripts/vendor.js -->
         <!-- bower:js -->
         <script src="../bower_components/jquery/dist/jquery.js"></script>
+        <script src="../bower_components/raphael/raphael.js"></script>
         <!-- endbower -->
         <!-- endbuild -->
 
@@ -392,7 +400,6 @@ Actuellement, Djinn Carrénard finalise son deuxième long-métrage de fiction :
         <!-- endbuild -->
 
         <!-- build:js({app,.tmp}) scripts/main.js -->
-        <script src="scripts/raphael.js"></script>
         <script src="scripts/world.js"></script>
         <script src="scripts/main.js"></script>
         <!-- endbuild -->

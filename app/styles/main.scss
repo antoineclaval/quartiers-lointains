@@ -1,7 +1,7 @@
 $icon-font-path: "/bower_components/bootstrap-sass-official/vendor/assets/fonts/bootstrap/";
 
 // bower:scss
-@import '../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap.scss';
+@import "../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap.scss";
 // endbower
 
 /* #Reset & Basics (Inspired by E. Meyers)
@@ -294,7 +294,7 @@ img {
 
 
 
-#films ,#festivals, #contacts{
+#s1 ,#festivals, #contacts, #s2{
     text-decoration: none;
 }
   

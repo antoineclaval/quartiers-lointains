@@ -2,9 +2,24 @@
   "name": "quartiers-lointains",
   "private": true,
   "dependencies": {
-    "bootstrap-sass-official": "~3.1.0",
-    "modernizr": "~2.6.2",
-    "jquery": "~1.11.0"
+    "raphael": "2.1.2"
   },
-  "devDependencies": {}
+  "version": "0.0.1",
+  "authors": [
+    "antoineclaval <antoine.claval@gmail.com>"
+  ],
+  "description": "bower dependancies for quartiers-lointains",
+  "main": "main.js",
+  "moduleType": [
+    "node"
+  ],
+  "license": "MIT",
+  "homepage": "www.quartiers-lointains.com",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
 }
