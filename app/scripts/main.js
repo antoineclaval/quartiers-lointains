@@ -49,15 +49,15 @@
     var currentCountry = "algerie";
 
     function navclick(e) {
-        console.log(pictureIndex);
         var str = this.id ; 
         if (str.indexOf('right') > 0) {
             pictureIndex++;
         } else {
             pictureIndex--;
         }
-        console.log(pictureIndex);
-        console.log(countryInfo[currentCountry].pictureNumber);
+        if ( pictureIndex < 1 ){
+            pictureIndex = countryInfo[currentCountry].pictureNumber;
+        }
         if ( pictureIndex > countryInfo[currentCountry].pictureNumber){
             pictureIndex =1 ;
         }
