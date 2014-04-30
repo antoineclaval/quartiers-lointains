@@ -50,7 +50,7 @@ html {
     h1 a {text-decoration: none;}
     h1 { font-size: 46px; line-height: 50px; margin-bottom: 14px; margin-left: 14px; margin-top: 60px;}
     h2 { font-size: 28px; line-height: 33px; margin-bottom: 7px; margin-top:24px; margin-bottom: 12px;}
-    h3 { font-size: 22px; line-height: 30px; margin-bottom: 10px; }
+    h3 { font-size: 22px; line-height: 30px; margin-bottom: 10px; margin-top:10px; }
     h4 { font-size: 21px; line-height: 30px; margin-bottom: 4px;}
     h5 { font-size: 17px; line-height: 24px; }
     h6 { font-size: 14px; line-height: 21px; }
@@ -182,7 +182,7 @@ footer{
 .center-justified {
   text-align: justify;
   margin: 0 auto;
-  width: 30em;
+  width: 45em;
 }
 
 
@@ -296,7 +296,13 @@ img {
 
 }
 
-
+.people-picture{
+    float: left;
+    padding:1px;
+    border:1px solid #EEEEEE;
+    background-color:#000000;
+    margin-right:8px;
+}
 
 #s1 ,#festivals, #contacts, #s2{
     text-decoration: none;
