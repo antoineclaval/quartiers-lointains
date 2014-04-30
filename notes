@@ -1,0 +1,35 @@
+Firefox
+
+"id:s1 = 875.25" main.js:19
+"id:festivals = 6353.716796875" main.js:19
+"id:contacts = 7131.7166748046875" main.js:19
+"id:ba = 81"
+
+Firefox sans jquery : document.getElementById(id).getBoundingClientRect().top + window.pageYOffset;
+"id:ba = 81" main.js:20
+"id:s1 = 875.25" main.js:20
+"id:festivals = 6353.716796875" main.js:20
+"id:contacts = 7131.7166748046875"
+
+Chrome
+
+id:s1 = 815.25 main.js:19 ==> 60
+id:festivals = 6289.25 main.js:19 ==> 64
+id:contacts = 7067.25 main.js:19 ==> 64.46
+id:ba = 96 ==> 15
+
+You have incorrect markup - span cannot contain div and the element you measure has div children which causes different behavior in Firefox (which doesn't extend span to contain div children) and Chrome (which does extend it). This causes different values to be returned from element.getBoundingClientRect() and - in consequence - different offset() values.
+
+I'll leave it to others but for me it's notabug, you just should correct your markup.
+
+http://bugs.jquery.com/ticket/13696
+
+
+document.getElementById("1").getBoundingClientRect()
+ClientRect {height: 37, width: 1424, left: 8, bottom: 45, right: 1432…}
+bottom: 45
+height: 37
+left: 8
+right: 1432
+top: 8
+width: 1424

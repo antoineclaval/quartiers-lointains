@@ -15,8 +15,10 @@
         // Remove "link" from the ID
         id = id.replace('link', '');
         // Scroll
-        console.log($('#' + id).offset().top);
-        $('html,body').animate({ scrollTop: $('#' + id).offset().top }, 'slow');
+        var topPos = document.getElementById(id).offsetTop + 100;
+        //var topPos = $('#' + id).offset().top ;
+        console.log("id:"+id+" = "+topPos);
+        $('html,body').animate({ scrollTop: topPos }, 'slow');
     }
 
     $(document).ready(function () {
@@ -37,10 +39,13 @@
         $('#submenu').on('mouseenter', function () {
             $('#under-nav').show();
         });
-        $('#submenu').on('mouseleave', function () {
+        $('#header').on('mouseenter', function () {
             $('#under-nav').hide();
         });
-
+        $('#header').on('mouseenter', function () {
+            $('#under-nav').hide();
+        });
+         
         $('#nav-left').click(navclick);
         $('#nav-right').click(navclick);
     });
