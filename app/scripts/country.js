@@ -15,7 +15,7 @@ var worldMapping = {
 var countryInfo = {
 	'rwanda' : {
 		'website' : 'http://rwandafilmfestival.net',
-		'pictureNumber' : 3,
+		'pictureNumber' : 4,
 		'displayCountry' : 'Rwanda',
 		'displayFestival': 'Rwanda film festival',
 		'festivalLatLon' : '1\xb057\u203213\u2033S, 30\xb03\u203238\u2033E'
