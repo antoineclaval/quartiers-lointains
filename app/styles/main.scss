@@ -201,17 +201,30 @@ img {
 
 .other-logos {
     display: none;
-    img {
-        margin-left: 5%;
-    }
+
     p {
         text-align: center;
     }
 }
 
-#current-logo{
+.country-logo{
+    display: none;
+}
+
+.country-picture{
+    display: none;
+    margin-left: 5%;
+}
+
+
+.current-picture{
+    display: block;
+}
+
+.current-logo{
     margin-bottom: 25px;
     margin-left: 30%;
+    display: block;
 }
 
 #picture-nav{
@@ -226,11 +239,11 @@ img {
 
 
 #nav-left{
-    left: 0%;
+    left: 5%;
 }
 
 #nav-right{
-    left: 75%;
+    left: 83%;
 }
 
 .container {

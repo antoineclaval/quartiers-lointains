@@ -50,14 +50,6 @@
         $('#nav-right').click(navclick);
     });
 
-    function reverse(s) {
-        return s.split('').reverse().join('');
-    }
-    // replace the 'n'th character of 's' with 't'
-    function replaceAt(s, n, t) {
-        return s.substring(0, n) + t + s.substring(n + 1);
-    }
-
     var pictureIndex = 1;
     var currentCountry = "algerie";
 
@@ -80,9 +72,9 @@
     }
 
     function changePicSrc() {
-        var picSrc = $('#current-picture').attr('src');
-        var newSrc = reverse(replaceAt(reverse(picSrc), 4, pictureIndex));
-        $('#current-picture').attr('src', newSrc);
+        $(".country-picture").removeClass("current-picture");
+        $("#"+currentCountry+pictureIndex).addClass("current-picture");
+
     }
 
     new Raphael('MapPortView', 480, 550, function () {
@@ -116,12 +108,17 @@
             }
             $('.france-logos').hide();
             $('.other-logos').show();
-            $('#current-logo').attr('style', 'display: block');
-            $('#current-picture').attr('style', 'display: block');
+            // logo
+            $(".country-logo").removeClass("current-logo");
+            $("#"+currentCountry).addClass("current-logo");
+            // picture
+            $(".country-picture").removeClass("current-picture");
+            $("#"+currentCountry+pictureIndex).addClass("current-picture");
+
             $('#current-logo').attr('src', 'images/logos/' + currentCountry + '.jpg');
+            // Text for country 
             $('.other-logos p').text(countryInfo[currentCountry].displayCountry + ' - ' + countryInfo[currentCountry].displayFestival);
             $('#currentLogoLink').attr('href', countryInfo[currentCountry].website);
-            $('#current-picture').attr('src', 'images/photos-festival/' + currentCountry + pictureIndex + '.jpg');
         };
 
         r.setStart();
