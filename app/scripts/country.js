@@ -24,7 +24,7 @@ var countryInfo = {
 		'website' : 'https://www.facebook.com/pages/Association-Project-heurts/254178147934570',
 		'pictureNumber' : 4,
 		'displayCountry' : 'Algérie',
-		'displayFestival': 'Festival Project Heurts',
+		'displayFestival': 'Rencontres cinématographiques de Béjaïa',
 		'festivalLatLon' : '36\xb045\u203200\u2033N, 5\xb04\u203200\u2033E'
 	},
 	'reunion' : {
