@@ -3,12 +3,15 @@
 
 var worldMapping = {
 	170: 'france',
+	174: 'france',
 	171: 'rwanda',
+	177: 'rwanda',
 	172: 'algerie',
-	173: 'france',
-	174: 'reunion',
-	175: 'algerie',
-	176: 'rwanda'
+	176: 'algerie',
+	175: 'reunion',
+	178: 'senegal',
+	173: 'senegal'
+
 };
 
 
@@ -40,5 +43,12 @@ var countryInfo = {
 		'displayCountry' : 'France',
 		'displayFestival': '',
 		'festivalLatLon' : '48\xb051\u203224\u2033N, 2\xb021\u203207\u2033E'
+	},
+	'senegal' : {
+		'website' : null,
+		'pictureNumber' : 0,
+		'displayCountry' : 'Sénégal',
+		'displayFestival': 'Festival de Cinéma Image et Vie',
+		'festivalLatLon' : '14\xb040\u203220\u2033N, 17\xb025\u203254\u2033W'
 	}
 };

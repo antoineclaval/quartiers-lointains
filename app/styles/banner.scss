@@ -1,0 +1,98 @@
+@import "settings";
+
+#banner {
+  position: relative;
+  z-index: 0;
+  overflow: auto;
+  height: $banner-height;
+  width: 100% !important;
+}
+
+#banner-content {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#banner-content > li > div {
+   width: $width;
+   margin: 0 auto;
+   height: $banner-height;
+}
+
+#banner-content > li {
+  height: $banner-height;
+  float: left;
+  width: 100%;
+}
+
+/* DOTS */
+#banner .dots {
+  position: absolute;
+  bottom: 10px;
+  margin: 0;
+  text-align: center;
+  width: 100% !important;
+  padding: 0;
+}
+
+#banner .dots > li {
+  /* see http://uncorkedstudios.com/2011/12/12/how-to-fix-the-ie7-and-inline-block-css-bug/ */
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+  padding: 0;
+  margin: 0;
+}
+
+#banner .dots > li > span {
+  display: block;
+  width: 10px;
+  height: 10px;
+  text-indent: -1000px;
+  overflow: hidden;
+  background: sprite($sprites, banner-bullet);
+  cursor: pointer;
+  margin: 0 5px;
+}
+
+#banner .dots > li > span:hover {
+  background: sprite($sprites, banner-bullet-hover);
+}
+
+#banner .dots > li.active > span {
+  background: sprite($sprites, banner-bullet-on);
+}
+
+/* PREVIOUS / NEXT */
+#banner-controls {
+  width: $width + 60px;
+  margin: 0 auto;
+  height: 0;
+}
+
+#banner-next, #banner-previous {
+  float: left;
+  position: relative;
+  top: -($banner-height + 30) / 2;
+  width: 19px;
+  height: 30px;
+  border: 0;
+  background: sprite($sprites, banner-arrow-left, 2px, 0);
+  overflow: hidden;
+  text-indent: -1000px;
+}
+
+#banner-next {
+  float: right;
+  left: 0;
+  background: sprite($sprites, banner-arrow-right);
+}
+
+#banner-next:hover {
+  background: sprite($sprites, banner-arrow-right, 2px, 0);
+}
+
+#banner-previous:hover {
+  background: sprite($sprites, banner-arrow-left);
+}

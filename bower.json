@@ -2,11 +2,14 @@
   "name": "quartiers-lointains",
   "private": true,
   "dependencies": {
-    "raphael": "2.1.2"
+    "raphael": "2.1.2",
+    "unslider": "1.0.0",
+    "reset-css":"2.0.20110126",
+    "normalize-css":"3.0.1"
   },
-  "version": "0.0.1",
+  "version": "0.0.2",
   "authors": [
-    "antoineclaval <antoine.claval@gmail.com>"
+    "antoineclaval <tech@quartiers-lointains.org>"
   ],
   "description": "bower dependancies for quartiers-lointains",
   "main": "main.js",

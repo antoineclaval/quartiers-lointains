@@ -1,5 +1,7 @@
 $icon-font-path: "/bower_components/bootstrap-sass-official/vendor/assets/fonts/bootstrap/";
 
+@import "settings";
+
 // bower:scss
 @import "../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap.scss";
 // endbower
@@ -14,15 +16,7 @@ $icon-font-path: "/bower_components/bootstrap-sass-official/vendor/assets/fonts/
         font: inherit;
         vertical-align: baseline; }
 
-html { 
-  margin:0;
-  padding:0;
-  background: url(../images/worldMapBack.jpg) no-repeat center fixed; 
-  -webkit-background-size: cover; /* pour Chrome et Safari */
-  -moz-background-size: cover; /* pour Firefox */
-  -o-background-size: cover; /* pour Opera */
-  background-size: cover; /* version standardisée */
-}
+
 
 
     article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
@@ -35,10 +29,25 @@ html {
         list-style: none; }
     blockquote, q {
         quotes: none; }
-    blockquote:before, blockquote:after,
-    q:before, q:after {
+    blockquote:before, blockquote:after, q:before, q:after {
         content: '';
         content: none; }
+
+html { 
+  margin:0;
+  padding:0;
+  background: url(../images/worldMapBack.jpg) no-repeat center fixed; 
+  -webkit-background-size: cover; /* pour Chrome et Safari */
+  -moz-background-size: cover; /* pour Firefox */
+  -o-background-size: cover; /* pour Opera */
+  background-size: cover; /* version standardisée */
+}
+
+/* # Slider http://unslider.com/
+================================================== */
+.banner { position: relative; overflow: auto; }
+.banner li { list-style: none; }
+.banner ul li { float: left; }
 
 /* #Typography
 ================================================== */

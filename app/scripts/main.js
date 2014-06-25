@@ -48,6 +48,24 @@
          
         $('#nav-left').click(navclick);
         $('#nav-right').click(navclick);
+
+        
+        var unslider =   $('.banner').unslider({
+                speed: 500,               //  The speed to animate each slide (in milliseconds)
+                delay: 3000,              //  The delay between slide animations (in milliseconds)
+                complete: function() {},  //  A function that gets called after every slide animation
+                keys: true,               //  Enable keyboard (left, right) arrow shortcuts
+                dots: true,               //  Display dot navigation
+                fluid: false              //  Support responsive design. May break non-responsive designs
+            });
+        
+        $('.unslider-arrow').click(function() {
+            var fn = this.className.split(' ')[1];
+            
+            //  Either do unslider.data('unslider').next() or .prev() depending on the className
+            unslider.data('unslider')[fn]();
+        });
+
     });
 
     var pictureIndex = 1;
@@ -99,6 +117,8 @@
         var clicked = function () {
             pictureIndex=1;
 
+            console.log(this.id);
+
             currentCountry = resolveWorldMapping(this.id);
 
             if (currentCountry === 'france') {
@@ -149,6 +169,12 @@
             'stroke-opacity': 0.2
         }).click(clicked);
 
+        r.path(worldmap.shapes.SN).attr({
+            fill: '#36a19a',
+            stroke: '#ccc6ae',
+            'stroke-opacity': 0.2
+        }).click(clicked);
+
         var world = r.setFinish();
 
         var latlonrg = /(\d+(?:\.\d+)?)[\xb0\s]?\s*(?:(\d+(?:\.\d+)?)['\u2019\u2032\s])?\s*(?:(\d+(?:\.\d+)?)["\u201d\u2033\s])?\s*([SNEW])?/i;
@@ -190,12 +216,14 @@
         var dot2 = getDot();
         var dot3 = getDot();
         var dot4 = getDot();
+        var dot5 = getDot();
 
 
         dot.stop().attr(world.parseLatLon(countryInfo.france.festivalLatLon)).animate({ r: 2 }, 2000, 'elastic');
         dot2.stop().attr(world.parseLatLon(countryInfo.reunion.festivalLatLon)).animate({ r: 2 }, 2000, 'elastic');
         dot3.stop().attr(world.parseLatLon(countryInfo.algerie.festivalLatLon)).animate({ r: 2 }, 2000, 'elastic');
         dot4.stop().attr(world.parseLatLon(countryInfo.rwanda.festivalLatLon)).animate({ r: 2 }, 2000, 'elastic');
+        dot5.stop().attr(world.parseLatLon(countryInfo.senegal.festivalLatLon)).animate({ r: 2 }, 2000, 'elastic');
         world.hover(over, out);
     });
 }());
