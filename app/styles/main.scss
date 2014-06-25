@@ -29,7 +29,8 @@ $icon-font-path: "/bower_components/bootstrap-sass-official/vendor/assets/fonts/
         list-style: none; }
     blockquote, q {
         quotes: none; }
-    blockquote:before, blockquote:after, q:before, q:after {
+    blockquote:before, blockquote:after,
+    q:before, q:after {
         content: '';
         content: none; }
 
