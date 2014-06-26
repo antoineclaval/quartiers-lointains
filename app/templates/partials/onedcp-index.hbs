@@ -1,0 +1,206 @@
+<div id="onedcp-banner-wrapper">
+  <div id="onedcp-banner">
+    <h1>One DCP</h1>
+    <p>
+      {{#i18n "onedcp.bannerText"}}{{/i18n}}
+    </p>
+    <p>
+      <span id="onedcp-upload-button" class="big-button">{{#i18n "onedcp.convertButton"}}{{/i18n}}</span>
+    </p>
+  </div>
+</div>
+  
+<div id="onedcp-wrapper" class="content-wrapper">
+  <div id="onedcp-description" class="content">
+    <ul id="onedcp-details">
+      <li id="onedcp-details-fast">
+        <h2>{{#i18n "onedcp.fast.title"}}{{/i18n}}</h2>
+        <p>
+          {{#i18n "onedcp.fast.desc"}}{{/i18n}}
+        </p>
+      </li>
+      <li id="onedcp-details-universal">
+        <h2>{{#i18n "onedcp.universal.title"}}{{/i18n}}</h2>
+        <p>
+          {{#i18n "onedcp.universal.desc"}}{{/i18n}}
+        </p>
+      </li>
+      <li id="onedcp-details-cheap">
+        <h2>{{#i18n "onedcp.cheap.title"}}{{/i18n}}</h2>
+        <p>
+          {{#i18n "onedcp.cheap.desc"}}{{/i18n}}
+        </p>
+      </li>
+    </ul>
+    
+    <div id="onedcp-formats">
+      <h2>{{#i18n "onedcp.technical.title"}}{{/i18n}}</h2>
+    
+      <h3>{{#i18n "onedcp.technical.video"}}{{/i18n}}</h3>
+      <ul>
+        <li>{{#i18n "onedcp.technical.video.video"}}{{/i18n}}</li>
+        <li>{{#i18n "onedcp.technical.video.audio"}}{{/i18n}}</li>
+        <li>{{#i18n "onedcp.technical.video.containers"}}{{/i18n}}</li>
+      </ul>
+      
+      <h3>{{#i18n "onedcp.technical.image"}}{{/i18n}}</h3>
+      <ul>
+        <li>{{#i18n "onedcp.technical.image.formats"}}{{/i18n}}</li>
+      </ul>
+      
+      <h3>{{#i18n "onedcp.technical.DCP"}}{{/i18n}}</h3>
+      <ul>
+        <li>{{#i18n "onedcp.technical.DCP.resolution"}}{{/i18n}}</li>
+        <li>{{#i18n "onedcp.technical.DCP.fps"}}{{/i18n}}</li>
+        <li>{{#i18n "onedcp.technical.DCP.stereoscopy"}}{{/i18n}}</li>
+        <li>{{#i18n "onedcp.technical.DCP.sound"}}{{/i18n}}</li>
+      </ul>
+    </div>
+    
+    <div id="onedcp-steps-wrapper">
+      <h2>{{#i18n "onedcp.steps"}}{{/i18n}}</h2>
+
+      <ul>
+        <li class="first">
+          <h3>{{#i18n "onedcp.steps.upload.title"}}{{/i18n}}</h3>
+          <p>
+            {{#i18n "onedcp.steps.upload.desc"}}{{/i18n}}
+          </p>
+        </li>
+        <li>
+          <h3>{{#i18n "onedcp.steps.config.title"}}{{/i18n}}</h3>
+          <p>
+            {{#i18n "onedcp.steps.config.desc"}}{{/i18n}}
+          </p>
+        </li>
+        <li>
+          <h3>{{#i18n "onedcp.steps.payment.title"}}{{/i18n}}</h3>
+          <p>
+            {{#i18n "onedcp.steps.payment.desc"}}{{/i18n}}
+          </p>
+        </li>
+        <li class="last">
+          <h3>{{#i18n "onedcp.steps.download.title"}}{{/i18n}}</h3>
+          <p>
+            {{#i18n "onedcp.steps.download.desc"}}{{/i18n}}
+          </p>
+        </li>
+      </ul>
+    </div>
+    
+    <div id="onedcp-tip">
+      {{#i18n "onedcp.tip"}}{{/i18n}}
+    </div>
+  </div>
+</div>
+
+<div id="onedcp-item-wrapper" class="content-wrapper" style="display: none">
+  <div id="onedcp-item" class="content">
+    <h2>{{#i18n "onedcp.item.title"}}{{/i18n}}</h2>
+    <ol class="breadcrumbs">
+      <li><a href="#onedcp-upload">{{#i18n "onedcp.item.upload"}}{{/i18n}}</a></li>
+      <li><a href="#onedcp-parameters">{{#i18n "onedcp.item.parametrize"}}{{/i18n}}</a></li>
+      <li><a href="#onedcp-payment">{{#i18n "onedcp.item.payment"}}{{/i18n}}</a></li>
+      <li><a href="#onedcp-conversion">{{#i18n "onedcp.item.conversion"}}{{/i18n}}</a></li>
+      <li class="last"><a href="#onedcp-download">{{#i18n "onedcp.item.download"}}{{/i18n}}</a></li>
+    </ol>
+    
+    <div id="onedcp-upload">
+      <p id="onedcp-upload-status">{{#i18n "onedcp.upload.label"}}{{/i18n}}</p>
+      <p id="onedcp-upload-percentage">0 %</p>
+      <p id="onedcp-upload-error" style="display: none">{{#i18n "onedcp.upload.error"}}{{/i18n}}</p>
+      <a href="#" id="onedcp-upload-continue" class="medium-button button-disabled">{{#i18n "onedcp.upload.continue"}}{{/i18n}}</a>
+    </div>
+    
+    <div id="onedcp-parameters" class="form">
+      <form action="#" method="post">
+        <h3>{{#i18n "onedcp.parameters.image.title"}}{{/i18n}}</h3>
+        
+        <p>{{#i18n "onedcp.parameters.image.description"}}{{/i18n}}</p>
+        
+        <div id="onedcp-format-ui">
+          <!-- Format selection -->
+          <ul id="onedcp-format-ui-formats">
+            <li>
+              <input type="radio" name="format" id="field-format-flat" value="FLAT_2K" checked="checked" class="onedcp-format-input" />
+              <label for="field-format-flat">
+                <em>Flat</em><br />
+                1998&times;1080, 1.85:1
+              </label>
+            </li>
+            <li class="selected">
+              <input type="radio" name="format" id="field-format-scope" value="SCOPE_2K" class="onedcp-format-input" />
+              <label for="field-format-scope">
+                <em>Scope</em><br />
+                2048&times;858, 2.39:1
+              </label>
+            </li>
+            <li>
+              <input type="radio" name="format" id="field-format-2k" value="FORMAT_2K" class="onedcp-format-input" />
+              <label for="field-format-2k">
+                <em>2K</em><br />
+                2048&times;1080, 1.90:1
+              </label>
+            </li>
+          </ul>
+          
+          <!-- Where the screen is displayed -->
+          <div id="onedcp-format-ui-preview">
+            <div id="onedcp-format-ui-preview-background"></div>
+            <div id="onedcp-format-ui-preview-video"></div>
+            <div id="onedcp-format-ui-preview-label"></div>
+          </div>
+          
+          <!-- The zoom selector -->
+          <ul id="onedcp-format-ui-zoom">
+            <li><input type="radio" id="dcp-stretch-100" name="dcp-stretch" class="onedcp-mode-input" checked="checked" value="HUNDRED" /> <label for="dcp-stretch-100">{{#i18n "onedcp.parameters.image.zoom.hunded"}}{{/i18n}}</label></li>
+            <li><input type="radio" id="dcp-stretch-stretchw" name="dcp-stretch" class="onedcp-mode-input" value="STRETCH_INNER" /> <label for="dcp-stretch-stretchw">{{#i18n "onedcp.parameters.image.zoom.stretchw"}}{{/i18n}}</label></li>
+            <li><input type="radio" id="dcp-stretch-stretchwo" name="dcp-stretch" class="onedcp-mode-input" value="STRETCH_OUTER" /> <label for="dcp-stretch-stretchwo">{{#i18n "onedcp.parameters.image.zoom.stretchwo"}}{{/i18n}}</label></li>
+          </ul>
+        </div>
+        
+        <h3>{{#i18n "onedcp.parameters.dcp.title"}}{{/i18n}}</h3>
+        
+        <p class="field-text" id="onedcp-duration-field-wrapper">
+          <label for="field-duration">{{#i18n "onedcp.parameters.dcp.duration"}}{{/i18n}}</label>
+          <input type="text" name="duration" id="field-duration" class="small" required /> {{#i18n "onedcp.parameters.dcp.seconds"}}{{/i18n}}
+        </p>
+        <p class="field-text">
+          <label for="field-dcp-name">{{#i18n "onedcp.parameters.dcp.name"}}{{/i18n}}</label>
+          <input type="text" name="title" id="field-dcp-name" required />
+        </p>
+        <p class="field-select">
+          <label for="field-dcp-type">{{#i18n "onedcp.parameters.dcp.type"}}{{/i18n}}</label>
+          <select name="type" id="field-dcp-type">
+            <option value="ADV">ADV</option>
+            <option value="TLR">TLR</option>
+            <option value="SHR">SHR</option>
+            <option value="FTR">FTR</option>
+          </select>
+        </p>
+
+        <h3>{{#i18n "onedcp.parameters.contact.title"}}{{/i18n}}</h3>
+        <p>{{#i18n "onedcp.parameters.contact.description"}}{{/i18n}}</p>
+        <p class="field-text">
+          <label for="field-email">{{#i18n "onedcp.parameters.contact.mail"}}{{/i18n}}</label>
+          <input type="email" name="email" id="field-email" required />
+        </p>
+        
+        <p class="field-submit">
+          <input type="hidden" id="onedcp-width", name="width" value="" />
+          <input type="hidden" id="onedcp-height", name="height" value="" />
+          <button class="big" id="onedcp-parameters-submit">{{#i18n "onedcp.parameters.continue"}}{{/i18n}}</button>
+        </p>
+      </form>
+    </div>
+    
+    <div id="onedcp-payment">
+      <div id="onedcp-payment-ok" style="display: none">
+        {{#i18n "onedcp.thankyou"}}{{/i18n}}
+      </div>
+      <div id="onedcp-payment-err" style="display: none">
+        {{#i18n "onedcp.error"}}{{/i18n}}
+      </div>
+    </div>
+  </div>
+</div>

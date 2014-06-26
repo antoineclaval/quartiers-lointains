@@ -121,6 +121,8 @@
 
             currentCountry = resolveWorldMapping(this.id);
 
+            console.log(currentCountry);
+
             if (currentCountry === 'france') {
                 $('.france-logos').show();
                 $('.other-logos').hide();

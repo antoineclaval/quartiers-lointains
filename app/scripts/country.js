@@ -11,7 +11,6 @@ var worldMapping = {
 	175: 'reunion',
 	178: 'senegal',
 	173: 'senegal'
-
 };
 
 
@@ -45,8 +44,8 @@ var countryInfo = {
 		'festivalLatLon' : '48\xb051\u203224\u2033N, 2\xb021\u203207\u2033E'
 	},
 	'senegal' : {
-		'website' : null,
-		'pictureNumber' : 0,
+		'website' : 'http://www.imagetvie.org/',
+		'pictureNumber' : 1,
 		'displayCountry' : 'Sénégal',
 		'displayFestival': 'Festival de Cinéma Image et Vie',
 		'festivalLatLon' : '14\xb040\u203220\u2033N, 17\xb025\u203254\u2033W'

@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="{{language}}">
+<head>
+  <!-- + Test AB -->
+  <meta charset="UTF-8">
+  <title>{{title}}</title>
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?{{token}}">
+  <link href='//fonts.googleapis.com/css?family=Cabin|Ubuntu:300:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="/static/styles/styles.css?{{token}}" media="all">
+{{#each css}}
+  <link rel="stylesheet" href="{{this}}?{{../token}}" media="all">
+{{/each}}
+  <!--[if lt IE 9]>
+  <script src="/static/scripts/lib/html5shiv.min.js?{{token}}"></script>
+  <![endif]-->
+  {{>ganalytics}}
+</head>
+<body class="lang-{{language}}"{{#if bodyId}} id="{{bodyId}}"{{/if}}>
+  <div id="header-wrapper">
+    <header>
+      <h1><a href="/{{language}}/">Dvidea</a></h1>
+      <nav>
+        <ul>
+          <li><a href="/{{language}}/#contact-us">{{#i18n "header.contactUs"}}{{/i18n}}</a></li>
+          <li><a href="/{{language}}/#our-company">{{#i18n "header.ourCompany"}}{{/i18n}}</a></li>
+          <li><a href="/{{language}}/#our-product">{{#i18n "header.ourProduct"}}{{/i18n}}</a></li>
+        </ul>
+      </nav>
+      <ul id="languages">
+        <li><a href="/fr/"{{#ifCond language "==" "fr"}} class="active"{{/ifCond}}>FR</a></li>
+        <li class="last-child"><a href="/en/"{{#ifCond language "==" "en"}} class="active"{{/ifCond}}>EN</a></li>
+      </ul>
+      <div id="header-banner">
+        <div id="call-us"><span>{{#i18n "header.callUsAt"}}{{/i18n}}</span><br /><a href="{{#i18n "phoneNumberLink"}}{{/i18n}}">{{#i18n "phoneNumber"}}{{/i18n}}</a></div>
+        <div id="register"><a href="/{{language}}/signup.html">{{#i18n "header.signup"}}{{/i18n}}</a></div>
+        <div id="connect"><a href="https://one.dvidea.com/login/">{{#i18n "header.login"}}{{/i18n}}</a></div>
+      </div>
+    </header>
+  </div>
+  
+  {{> body }}
+  
+  <footer>
+    <div class="column">
+      <h3>{{#i18n "footer.ourAddress"}}{{/i18n}}</h3>
+      <p>
+        <a href="https://www.google.com/maps?q=15,+rue+Jean-Baptiste+Berlier+75013+Paris,+France&amp;ie=UTF8&amp;sll=37.0625,-95.677068&amp;sspn=77.47067680700493,103.28171817647794&amp;t=m&amp;dg=opt&amp;hnear=15+Rue+Jean-Baptiste+Berlier,+75013+Paris,+%C3%8Ele-de-France,+France&amp;z=16"><img src="/static/images/footer/location.jpg" width="220" height="145" alt="{{#i18n "footer.map"}}{{/i18n}}" /></a>
+      </p>
+      
+      <address>
+        Paris Innovation Massena<br />
+        Hall B<br />
+        15, rue Jean-Baptiste Berlier<br />
+        75013 Paris, France
+      </address>
+    </div>
+    <div class="column">
+      <h3 id="contact-us">{{#i18n "footer.contactUs"}}{{/i18n}}</h3>
+      <h4>{{#i18n "footer.contact.sales"}}{{/i18n}}</h4>
+      <p>
+        <a href="mailto:sales@dvidea.com">sales@dvidea.com</a><br/>
+        <a href="{{#i18n "phoneNumberLink"}}{{/i18n}}">{{#i18n "phoneNumber"}}{{/i18n}}</a>
+      </p>
+      <h4>{{#i18n "footer.contact.technical"}}{{/i18n}}</h4>
+      <p>
+        <a href="mailto:support@dvidea.com">support@dvidea.com</a><br/>
+        <a href="tel:+33155437900">+33 1 55 43 79 00</a>
+      </p>
+      <ul id="social">
+        <li id="link-fb"><a href="https://www.facebook.com/DvideaOne" title="Suivez Dvidea sur Facebook">{{#i18n "footer.followUs.facebook"}}{{/i18n}}</a></li>
+        <li id="link-gplus"><a href="https://plus.google.com/117812168706244977111/about" title="Suivez Dvidea sur Google+">{{#i18n "footer.followUs.gplus"}}{{/i18n}}</a></li>
+        <li id="link-twitter"><a href="https://twitter.com/dvidea" title="Suivez Dvidea sur Twitter">{{#i18n "footer.followUs.twitter"}}{{/i18n}}</a></li>
+      </ul>
+      <!--
+      <h3>{{#i18n "footer.weHire"}}{{/i18n}}</h3>
+      <ul id="recruting">
+        <li>{{#i18n "footer.weHire.technical"}}{{/i18n}}</li>
+        <li>{{#i18n "footer.weHire.sales"}}{{/i18n}}</li>
+      </ul>
+      -->
+    </div>
+    <div class="column">
+      <h3>{{#i18n "footer.latestNews"}}{{/i18n}}</h3>
+      <div id="tweets">
+        <p>
+          <em>{{#i18n "footer.newsLoading"}}{{/i18n}}</em>
+        </p>
+      </div>
+    </div>
+    <div id="mentions">{{#i18n "footer.copyright"}}{{/i18n}}</div>
+  </footer>
+{{#if usei18n}}
+  <script src="/static/scripts/lib/i18n.min.js?{{token}}"></script>
+  <script src="/static/scripts/i18n/{{language}}.min.js?{{token}}"></script>
+  <script>
+    I18n.defaultLocale = "{{language}}";
+    I18n.locale = "{{language}}";
+  </script>
+{{/if}}
+{{#each javascripts}}
+  <script src="{{this}}?{{../token}}"></script> 
+{{/each}}
+</body>
+</html>

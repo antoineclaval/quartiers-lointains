@@ -1,0 +1,116 @@
+<div class="content-wrapper">
+  <div class="content">
+    <h2>{{#i18n "signup.title"}}{{/i18n}}</h2>
+    
+    <ol class="breadcrumbs">
+      <li><a href="#step-1">{{#i18n "signup.yourDetails"}}{{/i18n}}</a></li>
+      <li><a href="#step-2">{{#i18n "signup.yourApps"}}{{/i18n}}</a></li>
+      <li><a href="#step-3">{{#i18n "signup.summary"}}{{/i18n}}</a></li>
+      <li class="last"><a href="#step-4">{{#i18n "signup.confirmation"}}{{/i18n}}</a></li>
+    </ol>
+    
+    <div class="price">
+      <h4>{{#i18n "signup.yourFinalPrice"}}{{/i18n}}</h4>
+      <p class="price-holder">
+        <span class="discount"></span>
+        <span class="final-price">0</span><sup>€{{#i18n "signup.exclTax"}}{{/i18n}}</sup>
+      </p>
+      <p class="conditions-holder">
+        {{#i18n "signup.perMonthNoObligation"}}{{/i18n}}
+      </p>
+    </div>
+
+    <div id="step-1" class="form">
+      <form action="#" method="post">
+        <p class="field-text">
+          <label for="field-surname">{{#i18n "signup.firstName"}}{{/i18n}}</label>
+          <input type="text" name="surname" id="field-surname" required />
+        </p>
+        <p class="field-text">
+          <label for="field-name">{{#i18n "signup.lastName"}}{{/i18n}}</label>
+          <input type="text" name="name" id="field-name" required />
+        </p>
+        <p class="field-text">
+          <label for="field-email">{{#i18n "signup.email"}}{{/i18n}}</label>
+          <input type="email" name="email" id="field-email" required />
+        </p>
+        <p class="field-text">
+          <label for="field-company">{{#i18n "signup.company"}}{{/i18n}}</label>
+          <input type="text" name="company" id="field-company" required />
+        </p>
+        <p class="field-text">
+          <label for="field-function">{{#i18n "signup.function"}}{{/i18n}}</label>
+          <input type="text" name="function" id="field-function" required />
+        </p>
+        <p class="field-text">
+          <label for="field-phone-number">{{#i18n "signup.phoneNumber"}}{{/i18n}}</label>
+          <input type="text" name="phone-number" id="field-phone-number" required />
+        </p>
+        <p class="field-checkbox">
+          <label for="field-accept-terms"><input type="checkbox" name="accept-terms" id="field-accept-terms" required /> {{#i18n "signup.acceptTermsBefore"}}{{/i18n}}<a href="/static/download/cluf-v1.2.pdf">{{#i18n "signup.acceptTermsLink"}}{{/i18n}}</a></label>
+        </p>
+        
+        <p class="field-submit">
+          <button class="big">{{#i18n "signup.continue"}}{{/i18n}}</button>
+        </p>
+      </form>
+    </div>
+  
+    <div id="step-2" class="form">
+      <form action="#" method="post">
+        <div id="auditorium-count-selector">
+          <p>
+            {{#i18n "signup.auditoriumCountBefore"}}{{/i18n}} <input type="number" value="1" name="auditorium-count" id="auditorium-count-input" min="1" /> {{#i18n "signup.auditoriumCountAfter"}}{{/i18n}}
+          </p>
+        </div>
+        
+        <div id="apps">   
+          <p>
+            {{#i18n "signup.appsLoading"}}{{/i18n}}
+          </p>
+        </div>
+        
+        <p class="field-submit">
+          <a href="#step-1" class="small">{{#i18n "signup.editMyDetails"}}{{/i18n}}</a>
+          <button class="big">{{#i18n "signup.continue"}}{{/i18n}}</button>
+        </p>
+      </form>
+    </div>
+
+    <div id="step-3" class="form">      
+      <div class="header">
+        <h3>{{#i18n "signup.yourDetails"}}{{/i18n}}</h3>
+        <a href="#step-1">{{#i18n "signup.edit"}}{{/i18n}}</a>
+      </div>
+      <ul id="contact-summary">
+        <li><label>{{#i18n "signup.name"}}{{/i18n}}</label> <span class="value"><span id="contact-summary-surname"></span> <span id="contact-summary-name"></span></span></li>
+        <li><label>{{#i18n "signup.email"}}{{/i18n}}</label> <span id="contact-summary-email" class="value"></span></li>
+        <li><label>{{#i18n "signup.company"}}{{/i18n}}</label> <span id="contact-summary-company" class="value"></span></li>
+        <li><label>{{#i18n "signup.function"}}{{/i18n}}</label> <span id="contact-summary-function" class="value"></span></li>
+        <li><label>{{#i18n "signup.phoneNumber"}}{{/i18n}}</label> <span id="contact-summary-phone-number" class="value"></span></li> 
+      </ul>
+      
+      <div class="header">
+        <h3>{{#i18n "signup.yourApps"}}{{/i18n}}</h3>
+        <a href="#step-2">{{#i18n "signup.edit"}}{{/i18n}}</a>
+      </div>
+      <ul id="apps-summary">
+      </ul>
+      
+      
+      <p class="field-submit">
+        <a href="#step-2" class="small">{{#i18n "signup.editMyApps"}}{{/i18n}}</a>
+        <a href="#" class="big" id="order-button">{{#i18n "signup.confirm"}}{{/i18n}}</a>
+      </p>
+    </div>
+    
+    <div id="step-4">
+      <div id="signup-step-4-ok" style="display: none">
+        {{#i18n "signup.thankyou"}}{{/i18n}}
+      </div>
+      <div id="signup-step-4-err" style="display: none">
+        {{#i18n "signup.error"}}{{/i18n}}
+      </div>
+    </div>
+  </div>
+</div>
