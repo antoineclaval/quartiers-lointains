@@ -12,6 +12,10 @@
   list-style-type: none;
   padding: 0;
   margin: 0;
+  font-size: 38px;
+  color: black;
+  text-shadow: -0.5px 0 white, 0 0.5px white, 0.5px 0 white, 0 -0.5px white;
+  text-align: center;
 }
 
 #banner-content > li > div {
@@ -78,7 +82,7 @@
   width: 19px;
   height: 30px;
   border: 0;
-  background: sprite($sprites, banner-arrow-left, 2px, 0);
+  background: url(../images/sprites/banner-arrow-left.png) center 0 no-repeat;
   overflow: hidden;
   text-indent: -1000px;
 }
@@ -86,7 +90,7 @@
 #banner-next {
   float: right;
   left: 0;
-  background: sprite($sprites, banner-arrow-right);
+  background: url(../images/sprites/banner-arrow-right.png) center 0 no-repeat;
 }
 
 #banner-next:hover {
@@ -96,3 +100,14 @@
 #banner-previous:hover {
   background: sprite($sprites, banner-arrow-left);
 }
+
+/* Background images slide */
+#slide-quartiers-lointains { background: url(../images/logo_ql-big.jpg) center 0 no-repeat rgba(0, 0, 0,0.1); }
+#slide-totheoneilove { background: url(../images/movies/totheoneilove.jpg) center 0 no-repeat rgba(0, 0, 0,0.1); }
+#slide-offrande { background: url(../images/movies/offrande.jpg) center 0 no-repeat rgba(0, 0, 0,0.1);}
+#slide-dina { background: url(../images/movies/dina.jpg) center 0 no-repeat rgba(0, 0, 0,0.1); }
+#slide-twaaga { background: url(../images/movies/twaaga.jpg) center 0 no-repeat rgba(0, 0, 0,0.1); }
+
+
+
+

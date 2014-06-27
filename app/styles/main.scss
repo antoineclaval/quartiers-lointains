@@ -1,54 +1,12 @@
 $icon-font-path: "/bower_components/bootstrap-sass-official/vendor/assets/fonts/bootstrap/";
 
 @import "settings";
+@import "banner";
+@import "albums";
 
 // bower:scss
 @import "../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap.scss";
 // endbower
-
-/* #Reset & Basics (Inspired by E. Meyers)
-================================================== */
-    html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
-        margin: 0;
-        padding: 0;
-        border: 0;
-        font-size: 100%;
-        font: inherit;
-        vertical-align: baseline; }
-
-
-
-
-    article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
-        display: block; }
-    body {
-        line-height: 1; 
-        text-align: justify;
-    }
-    ol, ul {
-        list-style: none; }
-    blockquote, q {
-        quotes: none; }
-    blockquote:before, blockquote:after,
-    q:before, q:after {
-        content: '';
-        content: none; }
-
-html { 
-  margin:0;
-  padding:0;
-  background: url(../images/worldMapBack.jpg) no-repeat center fixed; 
-  -webkit-background-size: cover; /* pour Chrome et Safari */
-  -moz-background-size: cover; /* pour Firefox */
-  -o-background-size: cover; /* pour Opera */
-  background-size: cover; /* version standardisée */
-}
-
-/* # Slider http://unslider.com/
-================================================== */
-.banner { position: relative; overflow: auto; }
-.banner li { list-style: none; }
-.banner ul li { float: left; }
 
 /* #Typography
 ================================================== */
@@ -80,14 +38,25 @@ html {
     p a, p a:visited { line-height: inherit; }
 
 
-/* To clean and sort 
-================================================== */
-    body {
-        
-        font-size: 15px/22px ;
-        font-family: SketchetikFillLight, Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
-        background-color: transparent;
+body {
+    font-size: 16px;
+    font-family: SketchetikFillLight, Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+    background-color: transparent;
  }
+
+html { 
+  background: url(../images/worldMapBack.jpg) no-repeat center fixed; 
+  -webkit-background-size: cover; /* pour Chrome et Safari */
+  -moz-background-size: cover; /* pour Firefox */
+  -o-background-size: cover; /* pour Opera */
+  background-size: cover; /* version standardisée */
+}
+
+.container {
+    margin-top: 80px;
+    background-color: rgba(255,255,255,0.3); 
+    position: relative;
+}
 
 #logo{
     /*background: url("../img/logo_ql.png") no-repeat;*/
@@ -163,12 +132,13 @@ footer{
 }
 
     /*  Blockquotes  */
-    blockquote, blockquote p { font-size: 16px; line-height: 24px; }
+    blockquote, blockquote p { font-size: 16px; line-height: 24px;border:none; }
     blockquote { margin: 0 0 20px; padding: 9px 20px 0 19px; }
     blockquote cite { display: block; font-size: 12px; color: #000000; }
     blockquote cite:before { content: "\2014 \0020"; }
     blockquote cite a, blockquote cite a:visited, blockquote cite a:visited { color: #000000; }
-    blockquote p {  margin: 0 0 0 0;}
+    blockquote p {  margin: 0 0 0 0; }
+
 
 #intro{
     text-align:center;  
@@ -207,60 +177,7 @@ img {
 }
 
 
-/* Picture navigation layout */
 
-.other-logos {
-    display: none;
-
-    p {
-        text-align: center;
-    }
-}
-
-.country-logo{
-    display: none;
-}
-
-.country-picture{
-    display: none;
-    margin-left: 5%;
-}
-
-
-.current-picture{
-    display: block;
-}
-
-.current-logo{
-    margin-bottom: 25px;
-    margin-left: 30%;
-    display: block;
-}
-
-#picture-nav{
-    position: relative;
-    left: 0; top: 0;
-}
-
-.nav-button{
-    position: absolute; 
-    top: 45%; 
-}
-
-
-#nav-left{
-    left: 5%;
-}
-
-#nav-right{
-    left: 83%;
-}
-
-.container {
-    margin-top: 80px;
-    background-color: rgba(255,255,255,0.3); 
-    position: relative;
-}
 
 /* Top menu - white bar on top*/
 

@@ -54,54 +54,43 @@
                     </blockquote>
                 </div>
 
-                <div class="banner">
-                    <ul>
-                        <li>
-                            <div>
-                                <img class="picture-movies" src="images/logo_ql-big.jpg"/>
-                                Quartiers Lointains Saisons 02
-                            </div>
-                        </li>
-                        <li>
-                            <div>
-                                To the one i love
-                                <img class="picture-movies" src="images/movies/totheoneilove.jpg"/>
-                            </div>
-                        </li>
-                        <li>
-                            <div>
-                                Offrande
-                                <img class="picture-movies" src="images/movies/offrande.jpg"/>
-                            </div>
-                        </li>
-                        <li>
-                            <div>
-                                Dina
-                                <img class="picture-movies" src="images/movies/dina.jpg"/>
-                            </div>
-                        </li>
-                        <li>
-                            <div>
-                                Twaaga
-                                <img class="picture-movies" src="images/movies/twaaga.jpg"/>
-                            </div>
-                        </li>
-                    </ul>
+                    <div class="banner">
+                        <ul id="banner-content">
+                            <li id="slide-quartiers-lointains">
+                                <p>
+                                    Bientôt : Quartiers Lointains Saisons 2 
+                                </p>
+                            </li>
+                            <li id="slide-totheoneilove">
+                                <div>
+                                    To the one i love
+                                </div>
+                            </li>
+                            <li id="slide-offrande">
+                                <div>
+                                    Offrande
+                                </div>
+                            </li>
+                            <li id="slide-dina">
+                                <div>
+                                    Dina
+                                </div>
+                            </li>
+                            <li id="slide-twaaga">
+                                <div>
+                                    Twaaga
+                                </div>
+                            </li>
+                        </ul>
 
-                    <div id="banner-controls-wrapper">
-                        <div id="banner-controls">
-                            <button id="banner-next">Next</button>
-                            <button id="banner-previous">previous</button>
+                        <div id="banner-controls-wrapper">
+                            <div id="banner-controls">
+                                <button id="banner-next">Next</button>
+                                <button id="banner-previous">Previous</button>
+                            </div>
                         </div>
-                    </div>
                     </div> <!-- Banner -->
 
-
-                    <div>
-                        <div class="videoWrapper">
-                            <iframe src="http://player.vimeo.com/video/93468603?title=0&amp;byline=0&amp;portrait=0" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-                        </div>
-                    </div>
 
                     <div class="row"> 
                         <a id="s1"><h1>SAISON 1</h1></a>
@@ -112,6 +101,13 @@
                             On a souvent cru que l'Afrique seule r&eacute;alisait des films avec des bouts de ficelles, sans argent, grâce &agrave; la 
                             d&eacute;brouille. Ce n'est pas le cas.
                         </blockquote>
+
+                        <div>
+                            <div class="videoWrapper">
+                                <iframe src="http://player.vimeo.com/video/93468603?title=0&amp;byline=0&amp;portrait=0" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                            </div>
+                        </div>
+
                         <div class="short-movie">
                             <div class="row">
                                 <div>
@@ -381,9 +377,10 @@
         <img  id="rwanda3" class="picture-movies country-picture" src="images/photos-festival/rwanda3.jpg">
         <img  id="rwanda4" class="picture-movies country-picture" src="images/photos-festival/rwanda4.jpg">
         <img  id="senegal1" class="picture-movies country-picture" src="images/photos-festival/senegal1.jpg">
-        <img id="nav-right" class="nav-button" src="images/sprites/nav_right.png">
-        <img id="nav-left" class="nav-button" src="images/sprites/nav_left.png">
+        <button id="nav-right" class="nav-button">Next</button>
+        <button id="nav-left" class="nav-button">Previous</button>
     </div>
+
 
 </div>
 </div>
@@ -431,6 +428,7 @@
 <script src="../bower_components/raphael/raphael.js"></script>
 <script src="../bower_components/unslider/src/unslider.min.js"></script>
 <script src="../bower_components/handlebars/handlebars.js"></script>
+<script src="scripts/compiled-templates.js"></script>
 <!-- endbower -->
 <!-- endbuild -->
 
@@ -438,7 +436,7 @@
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  })(window,document,'script','http://www.google-analytics.com/analytics.js','ga');
 
   ga('create', 'UA-52119606-1', 'auto');
   ga('send', 'pageview');

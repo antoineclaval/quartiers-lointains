@@ -1,0 +1,54 @@
+/* Picture navigation layout */
+
+.other-logos {
+    display: none;
+
+    p {
+        text-align: center;
+    }
+}
+
+.country-logo{
+    display: none;
+}
+
+.country-picture{
+    display: none;
+    margin-left: 5%;
+}
+
+
+.current-picture{
+    display: block;
+}
+
+.current-logo{
+    margin-bottom: 25px;
+    margin-left: 30%;
+    display: block;
+}
+
+#picture-nav{
+    position: relative;
+    left: 0; top: 0;
+    margin: 0;
+}
+
+.nav-button{
+    position: absolute; 
+    top:45%;
+    text-indent: -1000px;
+    border: 0;
+}
+
+
+#nav-left{
+    background:url(../images/sprites/banner-arrow-left.png) center 0 no-repeat;
+    left:0px;
+}
+
+#nav-right{
+    background:url(../images/sprites/banner-arrow-right.png) center 0 no-repeat;
+    right: 0px;
+}
+
