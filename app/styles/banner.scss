@@ -12,16 +12,14 @@
   list-style-type: none;
   padding: 0;
   margin: 0;
-  font-size: 38px;
+  font-size: 32px;
   color: black;
-  text-shadow: -0.5px 0 white, 0 0.5px white, 0.5px 0 white, 0 -0.5px white;
-  text-align: center;
 }
 
-#banner-content > li > div {
+#banner-content > li > p {
    width: $width;
    margin: 0 auto;
-   height: $banner-height;
+   position: relative;
 }
 
 #banner-content > li {
@@ -49,24 +47,6 @@
   margin: 0;
 }
 
-#banner .dots > li > span {
-  display: block;
-  width: 10px;
-  height: 10px;
-  text-indent: -1000px;
-  overflow: hidden;
-  background: sprite($sprites, banner-bullet);
-  cursor: pointer;
-  margin: 0 5px;
-}
-
-#banner .dots > li > span:hover {
-  background: sprite($sprites, banner-bullet-hover);
-}
-
-#banner .dots > li.active > span {
-  background: sprite($sprites, banner-bullet-on);
-}
 
 /* PREVIOUS / NEXT */
 #banner-controls {
@@ -93,20 +73,45 @@
   background: url(../images/sprites/banner-arrow-right.png) center 0 no-repeat;
 }
 
-#banner-next:hover {
-  background: sprite($sprites, banner-arrow-right, 2px, 0);
-}
-
-#banner-previous:hover {
-  background: sprite($sprites, banner-arrow-left);
-}
 
 /* Background images slide */
-#slide-quartiers-lointains { background: url(../images/logo_ql-big.jpg) center 0 no-repeat rgba(0, 0, 0,0.1); }
-#slide-totheoneilove { background: url(../images/movies/totheoneilove.jpg) center 0 no-repeat rgba(0, 0, 0,0.1); }
-#slide-offrande { background: url(../images/movies/offrande.jpg) center 0 no-repeat rgba(0, 0, 0,0.1);}
-#slide-dina { background: url(../images/movies/dina.jpg) center 0 no-repeat rgba(0, 0, 0,0.1); }
-#slide-twaaga { background: url(../images/movies/twaaga.jpg) center 0 no-repeat rgba(0, 0, 0,0.1); }
+#slide-quartiers-lointains { 
+  background: url(../images/logo_ql-big.jpg) center 0 no-repeat rgba(0, 0, 0,0.1); 
+  p {
+    top: 335px;
+    left: 550px;
+  }
+}
+
+#slide-totheoneilove { 
+  background: url(../images/movies/totheoneilove.jpg) center 0 no-repeat rgba(0, 0, 0,0.1); 
+  p {
+    top: 20px;
+    left: 350px;
+  }
+}
+
+#slide-offrande { 
+  background: url(../images/movies/offrande.jpg) center 0 no-repeat rgba(0, 0, 0,0.1);
+  p {
+    top: 335px;
+    left: 240px;
+  }
+}
+#slide-dina { 
+  background: url(../images/movies/dina.jpg) center 0 no-repeat rgba(0, 0, 0,0.1); 
+  p {
+    top: 20px;
+    left: 320px;
+  }
+}
+#slide-twaaga { 
+  background: url(../images/movies/twaaga.jpg) center 0 no-repeat rgba(0, 0, 0,0.1); 
+  p {
+    top: 335px;
+    left: 550px;
+  }
+}
 
 
 

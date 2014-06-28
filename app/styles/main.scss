@@ -215,9 +215,11 @@ img {
         }
         /* sub-menu for short-movies seasons */
         #under-nav{
-            width: 80px;
+            width: 110px;
             font-size: 17px;
             display: none;
+            top: -4.5px;
+            position: relative;
             background-color: rgba(255, 255, 255, 0.8);
             li {
                 display:block;

@@ -373,12 +373,12 @@ module.exports = function (grunt) {
                     wrapped: true,
                     processName: function(filename) {
                     // funky name processing here
-                    return filename
-                        .replace(/^app/, '')
-                        .replace(/\.hbs$/, '');
-              }
+                        return filename
+                            .replace(/^app/, '')
+                            .replace(/\.hbs$/, '');
+                    }
+                }
             }
-          }
         },
 
         // Run some tasks in parallel to speed up build process

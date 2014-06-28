@@ -45,3 +45,29 @@ saison 2 + photo
 integrer handlebars ( par film )
 google analitics
 
+-----
+Dans Festivals
+
+Sous la carte indiquer Ils en parlent
+copier/coller des retours des spectateurs 
+
+Sur la page d'accueil
+
+Slideshow du logo et des 4 photos (titre du film - réalisateur - pays)
+
+Dans Saison 2 
+
+Le texte de présentation
+Bientôt 
+
+Dans Saison 1 
+
+bande-annonce
+puis texte
+
+
+--
+sudo find /var/www -type d -exec chmod 755 {} +
+sudo find /var/www -type f -exec chmod 644 {} +
+sudo chown -R www-data:www-data /var/www/
+sudo cp -R  --no-preserve=mode,ownership dist/* /var/www/
