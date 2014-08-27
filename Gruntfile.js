@@ -9,10 +9,11 @@
 
 module.exports = function (grunt) {
 
-    //There’s no need to load the "grunt-contrib-handlebars" 
+    //There’s no need to load specific "grunt-contrib" 
     //in your Gruntfile.js, as "require('load-grunt-tasks')(grunt);" is used to load all referenced tasks.
     // Load grunt tasks automatically
     require("load-grunt-tasks")(grunt);
+    grunt.loadNpmTasks('assemble');
 
     // Time how long tasks take. Can help when optimizing build times
     require("time-grunt")(grunt);
@@ -57,9 +58,11 @@ module.exports = function (grunt) {
                 files: ["<%= config.app %>/styles/{,*/}*.css"],
                 tasks: ["newer:copy:styles", "autoprefixer"]
             },
-            handlebars: {
-                files: ['<%= config.app %>/templates/*.hbs'],
-                tasks: ['handlebars']
+            assemble: {
+                files: ['<%= config.app %>/templates/layouts/*.hbs',
+                    '<%= config.app %>/templates/pages/*.hbs',
+                    '<%= config.app %>/templates/partials/*.hbs'],
+                tasks: ['assemble:server']
             },
             livereload: {
                 options: {
@@ -69,8 +72,29 @@ module.exports = function (grunt) {
                     "<%= config.app %>/{,*/}*.html",
                     ".tmp/styles/{,*/}*.css",
                     ".tmp/scripts/{,*/}*.js",
+                    '.tmp/*.html',
                     "<%= config.app %>/images/{,*/}*.{gif,jpeg,jpg,png,svg,webp}"
                 ]
+            }
+        },
+
+        assemble: {
+            options: {
+                flatten: true,
+                layout: 'default.hbs',
+                layoutdir: '<%= config.app %>/templates/layouts',
+                assets: 'dist/images',
+                partials: ['<%= config.app %>/templates/partials/*.hbs']
+            },
+            dist: {
+                files: {
+                    '<%= config.dist %>/': ['<%= config.app %>/templates/pages/*.hbs']
+                }
+            },
+            server: {
+                files: {
+                    '.tmp/': ['<%= config.app %>/templates/pages/*.hbs']
+                }
             }
         },
 
@@ -361,41 +385,18 @@ module.exports = function (grunt) {
             }
         },
 
-        handlebars: {
-            compile: {
-                files: {
-                    '.tmp/scripts/compiled-templates.js': [
-                        '<%= config.app %>/templates/**/*.hbs'
-                    ]
-                },
-                options: {
-                    namespace: 'QL.Templates',
-                    wrapped: true,
-                    processName: function(filename) {
-                    // funky name processing here
-                        return filename
-                            .replace(/^app/, '')
-                            .replace(/\.hbs$/, '');
-                    }
-                }
-            }
-        },
-
         // Run some tasks in parallel to speed up build process
         concurrent: {
             server: [
                 "sass:server",
-                "copy:styles",
-                "handlebars"
+                "copy:styles"
             ],
             test: [
-                "copy:styles",
-                "handlebars"
+                "copy:styles"
             ],
             dist: [
                 "sass",
                 "copy:styles",
-                "handlebars",
                 "imagemin",
                 "svgmin"
             ]
@@ -455,6 +456,7 @@ module.exports = function (grunt) {
     grunt.registerTask("default", [
         "newer:jshint",
         "test",
+        "assemble",
         "build"
     ]);
 };

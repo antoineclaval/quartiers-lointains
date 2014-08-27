@@ -71,3 +71,9 @@ sudo find /var/www -type d -exec chmod 755 {} +
 sudo find /var/www -type f -exec chmod 644 {} +
 sudo chown -R www-data:www-data /var/www/
 sudo cp -R  --no-preserve=mode,ownership dist/* /var/www/
+
+-- 
+
+grunt bowerInstall pour updater les HTML & co
+bower install X
+sudo npm install 
