@@ -1,16 +1,13 @@
 <div class="row"> 
-	<a id="s1"><h1>SAISON 1</h1></a>
+	<a id="{{saison.id}}"><h1>{{saison.name}}</h1></a>
 
 	<blockquote>
-		On a souvent vu la France par des films dont le prisme r&eacute;sultait d'une seule et même classe sociale
-		privil&eacute;gi&eacute;e vivant loin des vicissitudes que rencontrent les descendants de migrants n&eacute;s et install&eacute;s dans ce pays. 
-		On a souvent cru que l'Afrique seule r&eacute;alisait des films avec des bouts de ficelles, sans argent, grâce &agrave; la 
-		d&eacute;brouille. Ce n'est pas le cas.
+		{{saison.description}}
 	</blockquote>
 
 	<div>
 		<div class="videoWrapper">
-			<iframe src="http://player.vimeo.com/video/93468603?title=0&amp;byline=0&amp;portrait=0" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+			<iframe src="{{saison.trailer-url}}" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 		</div>
 	</div>
 
@@ -18,7 +15,7 @@
 		<div class="row">
 			<div>
 				<h2 class="movie-title">
-					J'mange pas d'porc
+					{{saison.movies.title}}
 				</h2>
 				<h3 class="movie-info">Un film d'Akim Isker et Mohamed Belhamar - 2012 - 27min</h3>
 			</div>

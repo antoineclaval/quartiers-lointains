@@ -84,12 +84,8 @@ module.exports = function (grunt) {
                 layout: 'default.hbs',
                 layoutdir: '<%= config.app %>/templates/layouts',
                 assets: 'dist/images',
-                partials: ['<%= config.app %>/templates/partials/*.hbs']
-            },
-            dist: {
-                files: {
-                    '<%= config.dist %>/': ['<%= config.app %>/templates/pages/*.hbs']
-                }
+                partials: ['<%= config.app %>/templates/partials/*.hbs'],
+                data:'app/data/*.json'
             },
             server: {
                 files: {
@@ -254,7 +250,7 @@ module.exports = function (grunt) {
             options: {
                 dest: "<%= config.dist %>"
             },
-            html: "<%= config.app %>/index.html"
+            html: ".tmp/index.html"
         },
 
         // Performs rewrites based on rev and the useminPrepare configuration
@@ -348,7 +344,7 @@ module.exports = function (grunt) {
                         "*.{ico,png,txt}",
                         ".htaccess",
                         "images/{,*/}*.webp",
-                        "{,*/}*.html",
+                        "../.tmp/{,*/}*.html",
                         "styles/fonts/{,*/}*.*"
                     ]
                 }, {
@@ -389,6 +385,7 @@ module.exports = function (grunt) {
         concurrent: {
             server: [
                 "sass:server",
+                "assemble",
                 "copy:styles"
             ],
             test: [
@@ -396,6 +393,7 @@ module.exports = function (grunt) {
             ],
             dist: [
                 "sass",
+                "assemble",
                 "copy:styles",
                 "imagemin",
                 "svgmin"
@@ -440,8 +438,8 @@ module.exports = function (grunt) {
 
     grunt.registerTask("build", [
         "clean:dist",
-        "useminPrepare",
         "concurrent:dist",
+        "useminPrepare",
         "autoprefixer",
         "concat",
         "cssmin",
@@ -456,7 +454,6 @@ module.exports = function (grunt) {
     grunt.registerTask("default", [
         "newer:jshint",
         "test",
-        "assemble",
         "build"
     ]);
 };

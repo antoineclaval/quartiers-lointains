@@ -2,7 +2,7 @@
 <html class="no-js">
 <head>
     <meta charset="utf-8">
-    <title>Quartiers Lointains : Courts M&eacute;trage du Nord au Sud de l'hemisph&egrave;re.</title>
+    <title>{{title}}</title>
     <meta name="description" content="Quartiers Lointain propose des courts m&eacute;trages du Nord au Sud de l'hemisph&egrave;re.">
     <meta name="viewport" content="width=device-width">
     <link rel="shortcut icon" href="/favicon.ico">
@@ -22,9 +22,18 @@
 
 </head>
     <body>
+
+
         {{> header}}
-        {{> body }}
+
+        <div class="container">
+        {{default.bla}}
+            {{> body }}
+        </div>
+
         {{> footer}}
+
+
         <!-- build:js scripts/vendor.js -->
         <!-- bower:js -->
         <script src="../bower_components/jquery/dist/jquery.js"></script>
