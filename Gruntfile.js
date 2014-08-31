@@ -73,6 +73,7 @@ module.exports = function (grunt) {
                     ".tmp/styles/{,*/}*.css",
                     ".tmp/scripts/{,*/}*.js",
                     '.tmp/*.html',
+                    "<%= config.app %>/templates/partials/*.hbs",
                     "<%= config.app %>/images/{,*/}*.{gif,jpeg,jpg,png,svg,webp}"
                 ]
             }
@@ -85,7 +86,8 @@ module.exports = function (grunt) {
                 layoutdir: '<%= config.app %>/templates/layouts',
                 assets: 'dist/images',
                 partials: ['<%= config.app %>/templates/partials/*.hbs'],
-                data:'app/data/*.json'
+                data:'<%= config.app %>/data/*.json',
+                helpers:'<%= config.app %>/templates/helpers/*.js'
             },
             server: {
                 files: {

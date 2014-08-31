@@ -1,0 +1,36 @@
+{{#each saison.movies}}
+
+<div class="short-movie">
+	<div class="row">
+		<div>
+			<h2 class="movie-title">
+				{{title}}
+			</h2>
+			<h3 class="movie-info">{{director}} - {{year}} - {{duration}}</h3>
+		</div>
+
+		<div class="col-md-6 imagewrapper">
+			<img class="picture-movies" src="{{picture}}" />
+			<p><a target="_blank" href="{{trailer-offset}}">Voir la bande annonce</a></p>
+		</div>
+
+		<div class="col-md-6">
+			<h4>Synopsis</h4>
+			<div class="synopsis">
+				<p>{{synopsis}}</p>
+			</div>
+			<h4>Biographie</h4>
+			<div class="context">
+				<p>{{biblio}}</p>
+				</div>
+				<p><a target="_blank" href="{{portrait}}">Lire le portrait du r&eacute;alisateur</a></p>
+			</div>
+		</div>
+		<div class="row"> 
+			<h4>Carri&egrave;re du film</h4>
+			<div class="palmares">
+				{{#list festivals}}{{name}} - {{location}} {{year}} {{#strong}}{{reward}}{{/strong}} {{/list}}
+			</div>
+		</div>
+</div>
+{{/each}}

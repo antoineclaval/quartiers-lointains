@@ -1,0 +1,49 @@
+{
+	  "id":"s1",
+	  "name": "SAISON 1" ,
+	  "description": "On a souvent vu la France par des films dont le prisme résultait d'une seule et même classe sociale privilégiée vivant loin des vicissitudes que rencontrent les descendants de migrants nés et installés dans ce pays. On a souvent cru que l'Afrique seule réalisait des films avec des bouts de ficelles, sans argent, grâce &agrave; la débrouille. Ce n'est pas le cas.",
+	  "trailer-url": "http://player.vimeo.com/video/93468603?title=0&amp;byline=0&amp;portrait=0",
+	  "movies":[
+	  	{ 
+	  	  "title":"J'mange pas d'porc",
+	  	  "year":"2012", 
+	  	  "duration":"27min", 
+	  	  "director":"Un film d'Akim Isker et Mohamed Belhamar", 
+	  	  "picture":"images/movies/Jmangepasdporc.jpg", 
+	  	  "trailer-offset":"http://vimeo.com/90465587#t=0m12s", 
+	  	  "synopsis":"Zino, jeune supporter de l’équipe de France de foot, vole une pizza sans se rendre compte qu'elle est au porc. Quelque chose l'empêche de la manger. Le regard des autres ? Son éducation ? Sa religion, ou sa foi ? Cette nuit l&agrave;, toutes ses contradictions le conduiront &agrave; affronter sa propre identité.",
+	  	  "biblio":"L'acteur et réalisateur Akim Isker (La Planque) et le directeur de casting Mohamed Belhamar (Un proph&egrave;te) se sont associés pour la premi&egrave;re fois pour réaliser ce court-métrage autoproduit tourné avec de nombreux acteurs non-professionnels.", 
+	  	  "portrait":"http://www.bondyblog.fr/201210121300/akim-isker-cineaste-entre-deux-terres/",
+	  	  "festivals":
+	  	  	[
+	  	  		{"name":"Les Pépites du Cinéma", "location":"France", "year":"2012"},
+	  	  		{"name":"Festival international du court-métrage de Binic", "location":"France", "year":"2013"},
+	  	  		{"name":"Courte Nuit", "location":"France", "year":"2013"},
+	  	  		{"name":"Festival International du court-métrage de Josselin", "location":"France", "year":"2013"},
+	  	  		{"name":"Saint-Paul-Trois-Châteaux", "location":"France", "year":"2013"},
+	  	  		{"name":"Festival du Court métrage de Namur", "location":"Belgique","year":"2013"},
+	  	  		{"name":"Festival Yaoundé Tout Court", "location":"Cameroun", "year":"2013", "reward":"- Meilleure fiction, meilleure image et meilleur acteur"},
+	  	  		{"name":"Journées Cinématographiques d'Alger", "location":"Algéria", "year":"2013"}
+	  	  	]
+	  	},
+	  	{ 
+	  	  "title":"La ligne brune",
+	  	  "year":"2010", 
+	  	  "duration":"26min", 
+	  	  "director":"Un film de Rachid Djaïdani", 
+	  	  "picture":"images/movies/ligne-brune.jpg", 
+	  	  "trailer-offset":"http://vimeo.com/90465587#t=1m00s", 
+	  	  "synopsis":"La Ligne brune est un film construit sur les neuf mois enveloppant la grossesse de ma femme, qui, à fleur de peau, fera éclore sur le flow de sa réfexion, son bonheur : devenir mère. Être père ? Je n'ai pas fait d'école et mon instinct animal m'a largué depuis Cro-Magnon. La Ligne brune est une échographie filmique singulière, un hymne à l'amour.",
+	  	  "biblio":"Boxeur, &eacute;crivain et r&eacute;alisateur, Rachid Djaïdani a tourn&eacute; ce film avec un appareil photo et un t&eacute;l&eacute;phone portable. Depuis, il a obtenu le Prix FIPRESCI de la Critique Internationale au Festival de Cannes 2012 et le Prix Michel-d'Ornano au Festival de Deauville 2012 avec son premier long-m&eacute;trage autoproduit durant neuf ans, Rengaine, s&eacute;lectionn&eacute; &agrave; la Quinzaine des R&eacute;alisateurs du Festival de Cannes. Distribu&eacute; en salle par la soci&eacute;t&eacute; Haut et Court en novembre 2012, le film a r&eacute;uni plus de 100 000 spectateurs.", 
+	  	  "portrait":"http://www.bondyblog.fr/201205210127/rachid-djaidani-cinema-badaoui/",
+	  	  "festivals":
+	  	  	[
+	  	  		{"name":"Les Pépites du Cinéma", "location":"France", "year":"2010"},
+	  	  		{"name":"Pocket Films", "location":"France", "year":"2011"},
+	  	  		{"name":"Festival international du Film de Dubaï", "location":"Dubaï", "year":"2011"},
+	  	  		{"name":"Cinébanlieue", "location":"France", "year":"2012"}
+	  	  	]
+	  	}
+
+	  ]	  
+}
