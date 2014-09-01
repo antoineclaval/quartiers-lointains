@@ -44,6 +44,29 @@
 					{"name":"Festival international du Film de Dubaï", "location":"Dubaï", "year":"2011"},
 					{"name":"Cinébanlieue", "location":"France", "year":"2012"}
 				]
+		},
+		{ 
+			"title":"En équipe",
+			"year":"2012", 
+			"duration":"21min", 
+			"director":"Un film de Steve Achiepo", 
+			"picture":"images/movies/En-equipe.jpg", 
+			"trailer-offset":"http://vimeo.com/90465587#t=1m00s", 
+			"synopsis":"Cergy, banlieue parisienne. Bastien 16 ans, vient de remporter avec son équipe un match décisif. Alors qu'il célèbre la victoire, Sékou, son meilleur ami, lui fait part d'une nouvelle fracassante devant l'ensemble de ses coéquipiers: Lauriane, la jolie flle à l'écharpe rouge souhaite faire sa connaissance...",
+			"biblio":"Premier passage à la réalisation de l'acteur Steve Achiepo (Waramutseho), En équipe a été autoproduit et tourné avec les joueurs d'une équipe de football de Cergy-Pontoise (95). Fort de son succès, le réalisateur vient de terminer son second court-métrage, A la source, produit par la société Barney Production.", 
+			"portrait":"http://www.bondyblog.fr/201211180001/steve-achiepo-cineaste-tout-de-go",
+			"festivals":
+				[
+					{"name":"Côt&eacute; Court", "location":"France", "year":"2013"},
+					{"name":"Festival des Films du Monde", "location":"Canada", "year":"2013"},
+					{"name":"Festival de Gindou", "location":"France", "year":"2013"},
+					{"name":"Cinébanlieue", "location":"France", "year":"2012", "reward":"Prix Talent en Courts"},
+					{"name":"Silence on Court !", "location":"France", "year":"2013", "reward":"Prix des Lycéens"},
+					{"name":"Festival international du film de Leeds", "location":"Grande-Bretagne", "year":"2013"},
+					{"name":"Festival des cr&eacute;ations t&eacute;l&eacute;visuelles de Luchon", "location":"France", "year":"2014"},
+					{"name":"Diffsée sur France 2"},
+					{"name":"Prix Qualitée CNC 2013"}
+				]
 		}
 	]	  
 }
