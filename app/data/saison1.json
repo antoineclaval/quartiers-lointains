@@ -51,7 +51,7 @@
 			"duration":"21min", 
 			"director":"Un film de Steve Achiepo", 
 			"picture":"images/movies/En-equipe.jpg", 
-			"trailer-offset":"http://vimeo.com/90465587#t=1m00s", 
+			"trailer-offset":"http://vimeo.com/90465587#t=2m02s", 
 			"synopsis":"Cergy, banlieue parisienne. Bastien 16 ans, vient de remporter avec son équipe un match décisif. Alors qu'il célèbre la victoire, Sékou, son meilleur ami, lui fait part d'une nouvelle fracassante devant l'ensemble de ses coéquipiers: Lauriane, la jolie flle à l'écharpe rouge souhaite faire sa connaissance...",
 			"biblio":"Premier passage à la réalisation de l'acteur Steve Achiepo (Waramutseho), En équipe a été autoproduit et tourné avec les joueurs d'une équipe de football de Cergy-Pontoise (95). Fort de son succès, le réalisateur vient de terminer son second court-métrage, A la source, produit par la société Barney Production.", 
 			"portrait":"http://www.bondyblog.fr/201211180001/steve-achiepo-cineaste-tout-de-go",
@@ -73,8 +73,8 @@
 			"year":"2011", 
 			"duration":"22min", 
 			"director":"Un film de Yassine Qnia", 
-			"picture":"images/movies/En-equipe.jpg", 
-			"trailer-offset":"http://vimeo.com/90465587#t=1m00s", 
+			"picture":"images/movies/fais-croquer.jpg", 
+			"trailer-offset":"http://vimeo.com/90465587#t=3m48s", 
 			"synopsis":"Yassine, jeune cinéphile passionné, veut tourner un flm dans son quartier. Il souhaite associer ses amis d'enfance à son projet. Mais l'amitié a parfois ses travers.",
 			"biblio":"Géomètre-topographe, Yassine Qnia a tourné Fais Croquer avec sa bande d'amis et une toute jeune société de production d'Aubervilliers (93). Après une belle carrière en festivals, Fais Croquer a permis à son réalisateur de co-réaliser le court-métrage Molii avec Mourad Boudaoud, Carine May et Hakim Zouhani qui a remporté en 2014 le Prix Spécial du Jury du Festival international du court-métrage de Clermont-Ferrand (France)", 
 			"portrait":"http://www.bondyblog.fr/201207170033/yassine-qnia-le-cinema-dans-la-peau/",
@@ -91,6 +91,22 @@
 					{"name":"Diffusé sur Canal+"},
 					{"name":"Prix Qualitée CNC 2013"},
 					{"name":"Lutin du meilleur acteur pour M'Barek Belkouk"}
+				]
+		},
+		{ 
+			"title":"White Girl in her Panty",
+			"year":"2010", 
+			"duration":"24min", 
+			"director":"Un film de Djinn Carr&eacute;nard", 
+			"picture":"images/movies/WhiteGirl.jpg", 
+			"trailer-offset":"http://vimeo.com/90465587#t=5m06s", 
+			"synopsis":"Ce film est est un préquel du long métrage \"Donoma\" : dans ce court métrage Dama et Leelop, expatriés français à New-York se rencontrent, dans Donoma ils se sépareront.",
+			"biblio":"Tourné à l'arraché à New York avec des comédiens français trouvés là par hasard, White girl in her panty est le préquel d'un long-métrage autoproduit qui fit la sensation au Festival de Cannes 2010 et obtint le Prix Louis Delluc 2011 du meilleur premier film, Donoma. Son second long-métrage, Faire l'amour, ouvrira la Semaine de la Critique du Festival de Cannes 2014.", 
+			"portrait":"http://www.bondyblog.fr/201210151301/djinn-carrenard-artisan-du-septieme-art/",
+			"festivals":
+				[
+					{"name":"Festival du Cinéma Européen", "location":"France", "year":"2013"},
+					{"name":"Les Pépites du Cinéma", "location":"France", "year":"2010"}
 				]
 		}
 
