@@ -64,9 +64,35 @@
 					{"name":"Silence on Court !", "location":"France", "year":"2013", "reward":"Prix des Lycéens"},
 					{"name":"Festival international du film de Leeds", "location":"Grande-Bretagne", "year":"2013"},
 					{"name":"Festival des cr&eacute;ations t&eacute;l&eacute;visuelles de Luchon", "location":"France", "year":"2014"},
-					{"name":"Diffsée sur France 2"},
+					{"name":"Diffusé sur France 2"},
 					{"name":"Prix Qualitée CNC 2013"}
 				]
+		},
+		{ 
+			"title":"Fait Croquer",
+			"year":"2011", 
+			"duration":"22min", 
+			"director":"Un film de Yassine Qnia", 
+			"picture":"images/movies/En-equipe.jpg", 
+			"trailer-offset":"http://vimeo.com/90465587#t=1m00s", 
+			"synopsis":"Yassine, jeune cinéphile passionné, veut tourner un flm dans son quartier. Il souhaite associer ses amis d'enfance à son projet. Mais l'amitié a parfois ses travers.",
+			"biblio":"Géomètre-topographe, Yassine Qnia a tourné Fais Croquer avec sa bande d'amis et une toute jeune société de production d'Aubervilliers (93). Après une belle carrière en festivals, Fais Croquer a permis à son réalisateur de co-réaliser le court-métrage Molii avec Mourad Boudaoud, Carine May et Hakim Zouhani qui a remporté en 2014 le Prix Spécial du Jury du Festival international du court-métrage de Clermont-Ferrand (France)", 
+			"portrait":"http://www.bondyblog.fr/201207170033/yassine-qnia-le-cinema-dans-la-peau/",
+			"festivals":
+				[
+					{"name":"Génération Court", "location":"France", "year":"2011", "reward":"- Prix du Public et Prix du Jury"},
+					{"name":"Premiers Plans", "location":"France", "year":"2012", "reward":"Prix CCAS"},
+					{"name":"Itinérances", "location":"France", "year":"2012", "reward":"Prix spécial du jury"},
+					{"name":"Festival du Cinéma européen", "location":"France", "year":"2012", "reward":"Prix spécial du jury"},
+					{"name":"Côté Court ", "location":"France", "year":"2012", "reward":"Prix du public"},
+					{"name":"Cinémabrut", "location":"France", "year":"2012", "reward":"Brutal de bronze"},
+					{"name":"Tolosa Tourne", "location":"France", "year":"2012", "reward":"Premier prix"},
+					{"name":"Courtscourts", "location":"France", "year":"2012", "reward":"Premier prix du jury"},
+					{"name":"Diffusé sur Canal+"},
+					{"name":"Prix Qualitée CNC 2013"},
+					{"name":"Lutin du meilleur acteur pour M'Barek Belkouk"}
+				]
 		}
+
 	]	  
 }
