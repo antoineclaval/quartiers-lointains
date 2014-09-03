@@ -15,7 +15,7 @@
         // Remove "link" from the ID
         id = id.replace('link', '');
         // Scroll
-        var topPos = document.getElementById(id).offsetTop + 100;
+        var topPos = document.getElementById(id).offsetTop + 90;
         //var topPos = $('#' + id).offset().top ;
         console.log("id:"+id+" = "+topPos);
         $('html,body').animate({ scrollTop: topPos }, 'slow');
