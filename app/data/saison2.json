@@ -7,14 +7,13 @@
 	[
 		{ 
 			"title":"To the one I love",
+			"origin":"Afrique du Sud",
 			"year":"2012", 
 			"duration":"23min", 
 			"director":"Un film de Zolani Ndevu", 
 			"picture":"images/movies/totheoneilove.jpg", 
-			"trailer-offset":"http://vimeo.com/90465587#t=0m12s", 
 			"synopsis":"Mon père a quitté la maison quand j'avais un mois. A mon 27e anniversaire, j'ai décidé de partir à sa recherche. J'ai cru que ma mère m'aiderait à le retrouver mais elle s'est sentie trahie. Depuis, j'ai acquis le statut d'homme adulte et pourtant je porte encore le nom de clan de ma mère. Cette histoire parle de moi et de mes recherches pour trouver mon père et découvrir pourquoi il nous a abandonnés",
 			"biblio":"Zolani Ndevu a débuté en tant que journaliste local dans la région de Cape Town. Formé durant deux ans à la Big Fish School of Digital Filmmaking de Johannesburg, il décroche en 2012 le Prix du Meilleur Film et du Meilleur Réalisateur pour To The One I Love. Sélectionné au Durban Talent Campus 2014 (Afrique du Sud), Zolani Ndevu est actuellement directeur de la société de production Ripple Effect. Media Production Western Cape. ", 
-			"portrait":"http://www.bondyblog.fr/201210121300/akim-isker-cineaste-entre-deux-terres/",
 			"festivals":
 			[
 				{"name":"Big Fish School of Digital Filmmaking", "location":"Afrique du Sud", "year":"2012", "reward":"-Meilleur Film et Meilleur réalisateur"},
@@ -23,14 +22,13 @@
 		},
 		{ 
 			"title":"Offrande",
+			"origin":"Tunisie",
 			"year":"2011", 
 			"duration":"16min", 
 			"director":"Un film de Walid Mattar", 
 			"picture":"images/movies/offrande.jpg", 
-			"trailer-offset":"http://vimeo.com/90465587#t=1m00s", 
 			"synopsis":"Maher, un gamin de sept ans, se promène dans son quartier et regarde les autres enfants qui jouent avec leur mouton. Il est le seul à ne pas en avoir et son ami se moque de lui... Il se réfugie dans les bras de sa mère qui frustrée elle aussi face à ses voisines, se plaint à son mari. Mais comment trouver un mouton quand on n'en a pas les moyens ?",
 			"biblio":"C’est au sein de la fédération Tunisienne des cinéastes amateurs de Tunisie que Walid Mattar s’est tourné vers le cinéma. Ses courts-métrages Le cuirassé Abdelkrim, Fils de Tortue, Bonjour, Da Gorgio mais surtout Condamnations (prix du Public au festival CineMed de Montpellier) et Offrande ont circulé dans de nombreux festivals. En 2011, son court Baba Noël a été diffusé sur ARTE. Walid Mattar écrit actuellement son premier long-métrage de fiction qui se déroulera entre la France et la Tunisie.", 
-			"portrait":"http://www.bondyblog.fr/201205210127/rachid-djaidani-cinema-badaoui/",
 			"festivals":
 				[
 					{"name":"Festival des Cinémas d’Afrique du pays d’Apt", "location":"France", "year":"2012"},
@@ -43,11 +41,11 @@
 		},
 		{ 
 			"title":"Dina",
+			"origin":"Mozambique",
 			"year":"2010", 
 			"duration":"23min", 
 			"director":"Un film de Mickey Fonseca", 
 			"picture":"images/movies/dina.jpg", 
-			"trailer-offset":"http://vimeo.com/90465587#t=1m00s", 
 			"synopsis":"Lorsque Dina, 14 ans, tombe enceinte, sa mère Fauzia commence à comprendre que le comportement violent de son mari Remane a atteint des limites extrêmes. Après une grande bagarre qui envoie Fauzia à l'hôpital, Dina tente de convaincre sa mère de poursuivre son père en justice. Au tribunal, Fauzia confronte Remane pour la dernière fois.",
 			"biblio":"Réalisateur et producteur, Mickey Fonseca a d’abord fait ses armes en Afrique du Sud en tant qu’assistant réalisateur (notamment sur Blood Diamond d’Edward Zick) avant de fonder sa propre société de production, Mahla Filmes, à Maputo (Mozambique).  Après avoir réalisé de nombreux films institutionnels et vidéo-clips, Mickey Fonseca a produit six courts-métrages et réalisé trois d’entre eux : Mahla, Traidos Pela Traicao et Dina. Il se bat actuellement pour produire son premier long-métrage de fiction qu’il autoproduira certainement en 2015", 
 			"portrait":"http://weloveafricanfilms.blogs.courrierinternational.com/archive/2012/11/26/afrikamera-2012-dario-mickey-fonseca-talks-about-mozambican.html",
@@ -62,19 +60,21 @@
 		},
 		{ 
 			"title":"Twaaga",
+			"origin":"Burkina Faso",
 			"year":"2013", 
 			"duration":"33min", 
 			"director":"Un film de Cédric Ido", 
 			"picture":"images/movies/twaaga.jpg", 
-			"trailer-offset":"http://vimeo.com/90465587#t=1m00s", 
 			"synopsis":"Burkina Faso, 1985. Manu, un garçon de huit ans, n'a pas d'amis. Il colle sans arrêt aux basques de son grand frère Albert et de ses deux copains, Kaboré et Ibou. Quand Albert se fait marabouter pour devenir invincible, Manu réalise qu'il existe dans la vraie vie des pouvoirs qui peuvent rivaliser avec ceux des supers héros dont il lit les aventures en bandes dessinées chaque semaine",
-			"biblio":"Acteur, réalisateur, chanteur, dessinateur, Cédric Ido a aussi bien joué dans des films tels que Miracle à Santa-Anna de Spike Lee que Les Meutes de Manuel Schapira, nominé aux César 2013. Après avoir réalisé plusieurs documentaires pour la télévision, il signe en 2011 son premier court-métrage, Hasaki Ya Suda,  qui circule à l’international, puis tourne Twaaga au Burkina Faso. Il est actuellement en écriture de son premier long-métrage de fiction sur des rabatteurs de salons de coiffure africains à Paris.", 
+			"biblio":"Acteur, réalisateur, chanteur, dessinateur, Cédric Ido a aussi bien joué dans des films tels que Miracle à Santa-Anna de Spike Lee que Les Meutes de Manuel Schapira, nominé aux César 2013. Après avoir réalisé plusieurs documentaires pour la télévision, il signe en 2011 son premier court-métrage, Hasaki Ya Suda, qui circule à l’international, puis est lauréat du programme Africa First porté par la société américaine Focus Features qui soutient la production de  Twaaga au Burkina Faso. Il est actuellement en écriture de son premier long-métrage de fiction sur des rabatteurs de salons de coiffure africains à Paris.", 
 			"portrait":"http://weloveafricanfilms.blogs.courrierinternational.com/archive/2013/10/01/burkina-faso-cedric-ido-parle-de-twaaga-49275.html",
 			"festivals":
 				[
-					{"name":"London Film Festival,", "location":"Royaume-Uni", "year":"2013"},
+					{"name":"London Film Festival", "location":"Royaume-Uni", "year":"2013"},
 					{"name":"Dubaï International Film Festival", "location":"Emirats Arabes Unis", "year":"2013", "reward":"- Mention spéciale du jury"},
-					{"name":"Festival CinéAfriqua 86", "location":"France", "year":"2014"}
+					{"name":"Festival CinéAfriqua 86", "location":"France", "year":"2014"},
+					{"name":"Seattle International Film Festival", "location":"USA","year": "2014" ,"reward": "Grand Prix du Jury"}, 
+					{"name":"Diffusé sur ARTE"}
 				]
 		}
 	]	  

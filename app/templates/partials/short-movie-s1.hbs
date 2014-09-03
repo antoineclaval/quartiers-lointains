@@ -6,12 +6,14 @@
 			<h2 class="movie-title">
 				{{title}}
 			</h2>
-			<h3 class="movie-info">{{director}} - {{year}} - {{duration}}</h3>
+			<h3 class="movie-info">{{director}} - {{origin}} - {{year}} - {{duration}}</h3>
 		</div>
 		
 		<div class="col-md-6 imagewrapper">
 				<img class="picture-movies" src="{{picture}}" />
-				<p><a target="_blank" href="{{trailer-offset}}">Voir la bande annonce</a></p>
+				{{#if trailer-offset}}
+					<p><a target="_blank" href="{{trailer-offset}}">Voir la bande annonce</a></p>
+				{{/if}}
 		</div>
 
 		<div class="col-md-6">
@@ -23,7 +25,9 @@
 				<div class="context">
 					<p>{{biblio}}</p>
 					</div>
-					<p><a target="_blank" href="{{portrait}}">Lire le portrait du r&eacute;alisateur</a></p>
+					{{#if portrait}}
+						<p><a target="_blank" href="{{portrait}}">Lire le portrait du r&eacute;alisateur</a></p>
+					{{/if}}
 				</div>
 		</div>
 

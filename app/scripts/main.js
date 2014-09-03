@@ -29,6 +29,13 @@
             goToByScroll($(this).attr('id'));
         });
 
+        $('#under-nav > ul > li > a').click(function (e) {
+        // Prevent a page reload when a link is pressed
+            e.preventDefault();
+        // Call the scroll function
+            goToByScroll($(this).attr('id'));
+        });
+
         $('#balink').click(function (e) {
             // Prevent a page reload when a link is pressed
             e.preventDefault();
@@ -129,6 +136,7 @@
             if (currentCountry === 'france') {
                 $('.france-logos').show();
                 $('.other-logos').hide();
+                $('#picture-nav').hide();
                 return;
             }
             $('.france-logos').hide();

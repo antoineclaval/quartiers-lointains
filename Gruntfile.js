@@ -74,6 +74,7 @@ module.exports = function (grunt) {
                     ".tmp/scripts/{,*/}*.js",
                     '.tmp/*.html',
                     "<%= config.app %>/templates/partials/*.hbs",
+                    "<%= config.app %>/data/*.json",
                     "<%= config.app %>/images/{,*/}*.{gif,jpeg,jpg,png,svg,webp}"
                 ]
             }
@@ -346,7 +347,7 @@ module.exports = function (grunt) {
                         "*.{ico,png,txt}",
                         ".htaccess",
                         "images/{,*/}*.webp",
-                        "../.tmp/{,*/}*.html",
+                        "{,*/}*.html",
                         "styles/fonts/{,*/}*.*"
                     ]
                 }, {
@@ -355,7 +356,15 @@ module.exports = function (grunt) {
                     cwd: ".",
                     src: ["bower_components/bootstrap-sass-official/vendor/assets/fonts/bootstrap/*.*"],
                     dest: "<%= config.dist %>"
-                }]
+                },{
+                    src: ".tmp/index.html",
+                    dest: "<%= config.dist %>/index.html"
+                },{
+                    src: ".tmp/mentions.html",
+                    dest: "<%= config.dist %>/mentions.html"
+                }
+
+                ]
             },
             styles: {
                 expand: true,
