@@ -2,19 +2,21 @@
 
 <div class="short-movie">
 	<div class="row">
-		<div>
 			<h2 class="movie-title">
 				{{title}}
 			</h2>
 			<h3 class="movie-info">{{director}} - {{origin}} - {{year}} - {{duration}}</h3>
-		</div>
 		
+		{{#if_even @index}}
+
 		<div class="col-md-6 imagewrapper">
 				<img class="picture-movies" src="{{picture}}" />
 				{{#if trailer-offset}}
 					<p><a target="_blank" href="{{trailer-offset}}">Voir la bande annonce</a></p>
 				{{/if}}
 		</div>
+
+		{{/if_even}}
 
 		<div class="col-md-6">
 				<h4>Synopsis</h4>
@@ -24,18 +26,29 @@
 				<h4>Biographie</h4>
 				<div class="context">
 					<p>{{biblio}}</p>
-					</div>
 					{{#if portrait}}
-					<p><a target="_blank" href="{{portrait}}">Lire le portrait du r&eacute;alisateur</a></p>
+						<p><a target="_blank" href="{{portrait}}">Lire le portrait du r&eacute;alisateur</a></p>
 					{{/if}}
 				</div>
 		</div>
 
-		<div class="row"> 
-			<h4>Carri&egrave;re du film</h4>
-			<div class="palmares">
-				{{#list festivals}}{{name}} - {{location}} {{year}} {{#strong}}{{reward}}{{/strong}} {{/list}}
-			</div>
+		{{#if_odd @index}}
+
+		<div class="col-md-6 imagewrapper">
+				<img class="picture-movies" src="{{picture}}" />
+				{{#if trailer-offset}}
+					<p><a target="_blank" href="{{trailer-offset}}">Voir la bande annonce</a></p>
+				{{/if}}
 		</div>
+
+		{{/if_odd}}
+	</div>
+
+	<div class="row"> 
+		<h4>Carrière du film</h4>
+		<div class="palmares">
+				{{#list festivals}}{{name}} - {{location}} {{year}} {{#strong}}{{reward}}{{/strong}} {{/list}}
+		</div>
+	</div>
 </div>
 {{/each}}

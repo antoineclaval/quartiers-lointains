@@ -77,3 +77,6 @@ sudo cp -R  --no-preserve=mode,ownership dist/* /var/www/
 grunt bowerInstall pour updater les HTML & co
 bower install X
 sudo npm install 
+
+
+-----
